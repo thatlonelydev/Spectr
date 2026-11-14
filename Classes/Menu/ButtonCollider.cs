@@ -1,5 +1,5 @@
 /*
- * Poison Menu  Classes/Menu/ButtonCollider.cs
+ * Spectr Menu  Classes/Menu/ButtonCollider.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
  * Copyright (C) 2026  Poison Software
@@ -19,11 +19,11 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-using Poison.Managers;
+using Spectr.Managers;
 using UnityEngine;
-using static Poison.Menu.Main;
+using static Spectr.Menu.Main;
 
-namespace Poison.Classes.Menu
+namespace Spectr.Classes.Menu
 {
     public class ButtonCollider : MonoBehaviour
     {
