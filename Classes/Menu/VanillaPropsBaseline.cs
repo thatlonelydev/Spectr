@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Classes/Menu/VanillaPropsBaseline.cs
+ * Spectr Menu  Classes/Menu/VanillaPropsBaseline.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,14 +21,14 @@
 
 using ExitGames.Client.Photon;
 using Photon.Pun;
-using Poison.Managers;
+using Spectr.Managers;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using Valve.Newtonsoft.Json;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
-namespace Poison.Classes.Menu
+namespace Spectr.Classes.Menu
 {
     public static class VanillaPropsBaseline
     {
