@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Poison.Managers.DiscordRPC.Exceptions
+namespace Spectr.Managers.DiscordRPC.Exceptions
 {
     /// <summary>
     /// Thrown when an action is performed on a client that has not yet been initialized
