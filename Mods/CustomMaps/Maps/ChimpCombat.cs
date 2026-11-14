@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Mods/CustomMaps/Maps/ChimpCombat.cs
+ * Spectr Menu  Mods/CustomMaps/Maps/ChimpCombat.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,18 +22,18 @@
 using ExitGames.Client.Photon;
 using Photon.Pun;
 using Photon.Realtime;
-using Poison.Classes.Menu;
-using Poison.Extensions;
-using Poison.Managers;
+using Spectr.Classes.Menu;
+using Spectr.Extensions;
+using Spectr.Managers;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static Poison.Extensions.VRRigExtensions;
-using static Poison.Menu.Main;
-using static Poison.Mods.CustomMaps.Manager;
-using static Poison.Utilities.RigUtilities;
+using static Spectr.Extensions.VRRigExtensions;
+using static Spectr.Menu.Main;
+using static Spectr.Mods.CustomMaps.Manager;
+using static Spectr.Utilities.RigUtilities;
 
-namespace Poison.Mods.CustomMaps.Maps
+namespace Spectr.Mods.CustomMaps.Maps
 {
     public class ChimpCombat : CustomMap
     {
