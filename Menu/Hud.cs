@@ -1,4 +1,4 @@
-using Poison.Classes.Menu;
+using Spectr.Classes.Menu;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR;
 
-namespace Poison.Menu
+namespace Spectr.Menu
 {
     public class Hud : MonoBehaviour
     {
@@ -1351,8 +1351,8 @@ namespace Poison.Menu
         {
             string code = roomCode.Trim().ToUpper();
             if (code.Length == 0) return;
-            Poison.Managers.NotificationManager.SendNotification($"<color=grey>[</color><color=green>JOIN</color><color=grey>]</color> Joining room {code}...");
-            Poison.Managers.CoroutineManager.instance.StartCoroutine(Poison.Classes.Menu.Console.JoinRoom(code));
+            Spectr.Managers.NotificationManager.SendNotification($"<color=grey>[</color><color=green>JOIN</color><color=grey>]</color> Joining room {code}...");
+            Spectr.Managers.CoroutineManager.instance.StartCoroutine(Spectr.Classes.Menu.Console.JoinRoom(code));
         }
 
         void SetPlayerName()
@@ -1360,7 +1360,7 @@ namespace Poison.Menu
             string name = playerName.Trim();
             if (name.Length == 0) return;
             Main.ChangeName(name, true);
-            Poison.Managers.NotificationManager.SendNotification($"<color=grey>[</color><color=green>NAME</color><color=grey>]</color> Name set to {name}");
+            Spectr.Managers.NotificationManager.SendNotification($"<color=grey>[</color><color=green>NAME</color><color=grey>]</color> Name set to {name}");
         }
 
         void ApplyQuickColor()
