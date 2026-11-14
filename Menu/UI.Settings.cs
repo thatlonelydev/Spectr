@@ -6,7 +6,7 @@ using UnityEngine;
 
 
 
-namespace Poison.Menu
+namespace Spectr.Menu
 {
     public partial class UI
     {
