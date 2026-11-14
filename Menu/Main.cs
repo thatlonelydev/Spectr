@@ -2,8 +2,8 @@
  * SPECTR  Menu/Main.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,14 +27,14 @@ using GorillaTagScripts;
 using HarmonyLib;
 using Photon.Pun;
 using Photon.Realtime;
-using Poison.Classes.Menu;
-using Poison.Classes.Mods;
-using Poison.Extensions;
-using Poison.Managers;
-using Poison.Mods;
-using Poison.Patches;
-using Poison.Patches.Menu;
-using Poison.Utilities;
+using Spectr.Classes.Menu;
+using Spectr.Classes.Mods;
+using Spectr.Extensions;
+using Spectr.Managers;
+using Spectr.Mods;
+using Spectr.Patches;
+using Spectr.Patches.Menu;
+using Spectr.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -57,17 +57,17 @@ using UnityEngine.XR;
 using Valve.Newtonsoft.Json;
 using Valve.VR;
 using WebSocketSharp;
-using static Poison.Utilities.AssetUtilities;
-using static Poison.Utilities.FileUtilities;
-using static Poison.Utilities.RandomUtilities;
-using ButtonCollider = Poison.Classes.Menu.ButtonCollider;
+using static Spectr.Utilities.AssetUtilities;
+using static Spectr.Utilities.FileUtilities;
+using static Spectr.Utilities.RandomUtilities;
+using ButtonCollider = Spectr.Classes.Menu.ButtonCollider;
 using CommonUsages = UnityEngine.XR.CommonUsages;
-using Console = Poison.Classes.Menu.Console;
+using Console = Spectr.Classes.Menu.Console;
 using JoinType = GorillaNetworking.JoinType;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
-namespace Poison.Menu
+namespace Spectr.Menu
 {
     [HarmonyPatch(typeof(GTPlayer), nameof(GTPlayer.LateUpdate))]
     public class Main : MonoBehaviour
