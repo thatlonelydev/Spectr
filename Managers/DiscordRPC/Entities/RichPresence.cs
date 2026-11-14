@@ -1,10 +1,10 @@
-using Poison.Managers.DiscordRPC.Exceptions;
-using Poison.Managers.DiscordRPC.Helper;
+using Spectr.Managers.DiscordRPC.Exceptions;
+using Spectr.Managers.DiscordRPC.Helper;
 using System;
 using System.Text;
 using Valve.Newtonsoft.Json;
 
-namespace Poison.Managers.DiscordRPC
+namespace Spectr.Managers.DiscordRPC
 {
     /// <summary>
     /// The base rich presence structure
