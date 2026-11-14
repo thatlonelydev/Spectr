@@ -23,7 +23,7 @@ namespace Spectr
 {
     public class PluginInfo
     {
-        public const string GUID = "org.Poison.gorillatag.Spectr";
+        public const string GUID = "org.Poison.gorillatag.Poisonmenu";
         public const string Name = "Spectr";
         public const string Description = "Community powered mod menu for Gorilla Tag.";
         public const string BuildTimestamp = "2026-10-27T01:32:03Z";
