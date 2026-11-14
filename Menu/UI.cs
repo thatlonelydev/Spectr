@@ -50,12 +50,12 @@ namespace Poison.Menu
 
         private const float backgroundBaseAlpha = 1f;
         private const float panelBaseAlpha = 1f;
-        private Color background = new Color(0.055f, 0.066f, 0.09f, backgroundBaseAlpha);
-        private Color panel = new Color(0.086f, 0.1f, 0.14f, panelBaseAlpha);
-        private Color border = new Color32(43, 47, 60, 255);
-        private Color accent = new Color32(158, 139, 255, 255);
-        private Color bright = new Color32(235, 237, 245, 255);
-        private Color muted = new Color32(144, 151, 169, 255);
+        private Color background = new Color(0.018f, 0.014f, 0.032f, backgroundBaseAlpha);
+        private Color panel = new Color(0.045f, 0.032f, 0.075f, panelBaseAlpha);
+        private Color border = new Color32(66, 48, 100, 255);
+        private Color accent = new Color32(174, 112, 255, 255);
+        private Color bright = new Color32(245, 241, 255, 255);
+        private Color muted = new Color32(165, 151, 190, 255);
         private static readonly Regex tags = new Regex("<[^>]*>", RegexOptions.Compiled);
 
         internal Color BackgroundColor => background;
@@ -388,7 +388,7 @@ namespace Poison.Menu
         {
             switch (kind)
             {
-                case PanelLauncher: return "Poison";
+                case PanelLauncher: return "SPECTR";
                 case PanelCategory: return category;
                 case PanelFavorites: return "Favorites";
                 case PanelActive: return "Active";
@@ -1356,7 +1356,7 @@ namespace Poison.Menu
             Box(new Rect(sx - 260, sy - 165, 1080, 700), new Color(0, 0, 0, 0.6f), 0);
             Box(new Rect(sx, sy, 560, 365), border, 8);
             Box(new Rect(sx + 1, sy + 1, 558, 363), panel, 7);
-            Label(new Rect(sx + 26, sy + 22, 490, 28), "Poison", titleStyle);
+            Label(new Rect(sx + 26, sy + 22, 490, 28), "SPECTR", titleStyle);
             string message = Plain(prompt.Message);
             float height = wrapStyle.CalcHeight(new GUIContent(message), 484);
             BeginScroll(new Rect(sx + 26, sy + 74, 508, 155), promptScroll, height);
@@ -1597,7 +1597,7 @@ namespace Poison.Menu
             status = text;
             statusUntil = Time.unscaledTime + 5;
             motions.Remove("status");
-            NotificationManager.SendNotification("<color=grey>[</color><color=#" + ColorUtility.ToHtmlStringRGB(accent) + ">Poison</color><color=grey>]</color> " + text);
+            NotificationManager.SendNotification("<color=grey>[</color><color=#" + ColorUtility.ToHtmlStringRGB(accent) + ">SPECTR</color><color=grey>]</color> " + text);
         }
 
         public void DebugPrint(string text)
