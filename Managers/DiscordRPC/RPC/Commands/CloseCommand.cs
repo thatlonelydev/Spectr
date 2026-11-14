@@ -1,7 +1,7 @@
-﻿using Poison.Managers.DiscordRPC.RPC.Payload;
+﻿using Spectr.Managers.DiscordRPC.RPC.Payload;
 using Valve.Newtonsoft.Json;
 
-namespace Poison.Managers.DiscordRPC.RPC.Commands
+namespace Spectr.Managers.DiscordRPC.RPC.Commands
 {
     internal class CloseCommand : ICommand
     {
