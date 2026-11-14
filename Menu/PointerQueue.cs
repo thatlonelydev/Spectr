@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Poison.Menu
+namespace Spectr.Menu
 {
     internal sealed class PointerQueue<T>
     {
