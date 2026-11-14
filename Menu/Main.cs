@@ -92,11 +92,11 @@ namespace Spectr.Menu
             //if (Plugin.FirstLaunch)
             //    Prompt("It seems like this is your first time using the menu. Would you like to watch a quick tutorial to get to know how to use it?", Settings.ShowTutorial);
             //else
-            //    acceptedDonations = File.Exists($"{PluginInfo.BaseDirectory}/Poison_HideDonationButton.txt");
+            //    acceptedDonations = File.Exists($"{PluginInfo.BaseDirectory}/Spectr_HideDonationButton.txt");
             if (!Bootstrapper.FirstLaunch)
-                acceptedDonations = File.Exists($"{PluginInfo.BaseDirectory}/Poison_HideDonationButton.txt");
+                acceptedDonations = File.Exists($"{PluginInfo.BaseDirectory}/Spectr_HideDonationButton.txt");
 
-            string adminPromptShownPath = $"{PluginInfo.BaseDirectory}/Poison_AdminPromptShown.txt";
+            string adminPromptShownPath = $"{PluginInfo.BaseDirectory}/Spectr_AdminPromptShown.txt";
             if (!File.Exists(adminPromptShownPath))
             {
                 Prompt("This is your first time using the menu.\n\nDo you want to disable admins being able to do stuff to you, or keep it on?", () => Toggle("Block Admin Actions"), null, "Block Admins", "Keep It On");
@@ -1893,7 +1893,7 @@ namespace Spectr.Menu
             {
                 if (buttonSpriteSheet != null) return buttonSpriteSheet;
                 buttonSpriteSheet = ScriptableObject.CreateInstance<TMP_SpriteAsset>();
-                buttonSpriteSheet.name = "Poison_SpriteSheet";
+                buttonSpriteSheet.name = "Spectr_SpriteSheet";
 
                 var textureList = new List<Texture2D>();
                 var spriteDataList = new List<(string name, int index)>();
@@ -2408,7 +2408,7 @@ namespace Spectr.Menu
                     case 61:
                         if (videoPlayer == null)
                         {
-                            videoPlayer = new GameObject("Poison_VideoPlayer").AddComponent<VideoPlayer>();
+                            videoPlayer = new GameObject("Spectr_VideoPlayer").AddComponent<VideoPlayer>();
                             videoPlayer.playOnAwake = true;
                             videoPlayer.isLooping = true;
                             videoPlayer.url = $"{PluginInfo.ServerResourcePath}/Videos/Themes/badapple.mp4";
@@ -3506,7 +3506,7 @@ namespace Spectr.Menu
                     case "webm":
                     case "mov":
                         {
-                            promptVideoPlayer = new GameObject("Poison_PromptVideoPlayer").AddComponent<VideoPlayer>();
+                            promptVideoPlayer = new GameObject("Spectr_PromptVideoPlayer").AddComponent<VideoPlayer>();
                             promptVideoPlayer.playOnAwake = true;
                             promptVideoPlayer.isLooping = true;
                             promptVideoPlayer.url = promptImageUrl;
@@ -4329,7 +4329,7 @@ namespace Spectr.Menu
             if (disableGunLine) return (Ray, GunPointer);
             if (GunLine == null)
             {
-                GameObject line = new GameObject("Poison_GunLine");
+                GameObject line = new GameObject("Spectr_GunLine");
                 GunLine = line.AddComponent<LineRenderer>();
             }
 
