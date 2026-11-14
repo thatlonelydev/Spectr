@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Patches/Menu/EntityGrabPatch.cs
+ * Spectr Menu  Patches/Menu/EntityGrabPatch.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@ using HarmonyLib;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Poison.Patches.Menu
+namespace Spectr.Patches.Menu
 {
     [HarmonyPatch(typeof(GameEntityManager), nameof(GameEntityManager.TryGrabLocal))]
     public class EntityGrabPatch
