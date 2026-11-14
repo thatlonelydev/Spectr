@@ -1,4 +1,4 @@
-﻿namespace Poison.Managers.DiscordRPC
+﻿namespace Spectr.Managers.DiscordRPC
 {
     /// <summary>
     /// Rich Presence activity type
