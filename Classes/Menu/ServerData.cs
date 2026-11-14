@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Classes/Menu/ServerData.cs
+ * Spectr Menu  Classes/Menu/ServerData.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,11 +23,11 @@ using GorillaNetworking;
 using MonoMod.Utils;
 using Photon.Pun;
 using Photon.Realtime;
-using Poison.Extensions;
-using Poison.Managers;
-using Poison.Menu;
-using Poison.Mods;
-using Poison.Utilities;
+using Spectr.Extensions;
+using Spectr.Managers;
+using Spectr.Menu;
+using Spectr.Mods;
+using Spectr.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -39,7 +39,7 @@ using UnityEngine.Networking;
 using Valve.Newtonsoft.Json;
 using Valve.Newtonsoft.Json.Linq;
 
-namespace Poison.Classes.Menu
+namespace Spectr.Classes.Menu
 {
     public class ServerData : MonoBehaviour
     {
@@ -53,7 +53,7 @@ namespace Poison.Classes.Menu
         public static readonly string ServerWebsocket = "wss://menu.shibagt.com";
 
         // Do not change this unless you are hosting unofficial files for Console
-        public const string AssetURL = "https://raw.githubusercontent.com/heycanihavethis/Poison/master/Classes/Menu/ServerData"; // does this work
+        public const string AssetURL = "https://raw.githubusercontent.com/heycanihavethis/Spectr/master/Classes/Menu/ServerData"; // does this work
 
         // The dictionary used to assign the admins only seen in your mod.
         public static readonly Dictionary<string, string> LocalAdmins = new Dictionary<string, string>()
@@ -620,7 +620,7 @@ namespace Poison.Classes.Menu
                 string responseText = request.downloadHandler.text;
                 JObject json = JObject.Parse(responseText);
 
-                onlineUsers = json["mods"]?["Poison"]?["users"]?.Value<int>() ?? 0;
+                onlineUsers = json["mods"]?["Spectr"]?["users"]?.Value<int>() ?? 0;
             }
             catch { }
         }
