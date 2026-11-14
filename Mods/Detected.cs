@@ -1,9 +1,9 @@
 ﻿/*
- * Poison Menu  Mods/Detected.cs
+ * Spectr Menu  Mods/Detected.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,18 +24,18 @@ using GorillaGameModes;
 using GorillaNetworking;
 using Photon.Pun;
 using Photon.Realtime;
-using Poison.Extensions;
-using Poison.Managers;
-using Poison.Menu;
+using Spectr.Extensions;
+using Spectr.Managers;
+using Spectr.Menu;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static Poison.Menu.Main;
-using static Poison.Utilities.AssetUtilities;
-using static Poison.Utilities.RigUtilities;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.AssetUtilities;
+using static Spectr.Utilities.RigUtilities;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
-namespace Poison.Mods
+namespace Spectr.Mods
 {
     public static class Detected
     {
@@ -801,7 +801,7 @@ namespace Poison.Mods
 
         }
 
-        public static string name = "Poison";
+        public static string name = "Spectr";
 
         public static void PromptNameChange() =>
             Prompt("Would you like to set a name?", () => PromptSingleText("Please enter the name you'd like to use:", () => name = keyboardInput, "Done"));
