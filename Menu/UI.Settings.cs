@@ -27,7 +27,7 @@ namespace Poison.Menu
             public string[] joyButtons = { "trigger", "button2", "button3", "button8", "button4", "button5" };
             public bool syncTheme = true;
             public float scale = 1;
-            public float rounding = 1;
+            public float rounding = 1.25f;
             public bool effects = true;
             public bool particles = true;
             public float effectStrength = 1;
@@ -97,7 +97,7 @@ namespace Poison.Menu
                 options.wiiY = Limit(options.wiiY, -1, 1, 0);
                 if (options.joyButtons == null || options.joyButtons.Length != 6)
                     options.joyButtons = new Options().joyButtons;
-                options.rounding = Limit(options.rounding, 0, 1.5f, 1);
+                options.rounding = Limit(options.rounding, 0, 1.5f, 1.25f);
                 options.effectStrength = Limit(options.effectStrength, 0, 2, 1);
                 options.animationSpeed = Limit(options.animationSpeed, 0.35f, 2.5f, 1);
                 options.scrollSpeed = Limit(options.scrollSpeed, 8, 60, 22);
