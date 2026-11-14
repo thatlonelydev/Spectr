@@ -1,9 +1,9 @@
 ﻿/*
- * Poison Menu  Managers/AchievementManager.cs
+ * Spectr Menu  Managers/AchievementManager.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,17 +19,17 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-using Poison.Classes.Menu;
-using Poison.Extensions;
-using Poison.Menu;
+using Spectr.Classes.Menu;
+using Spectr.Extensions;
+using Spectr.Menu;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Valve.Newtonsoft.Json.Linq;
-using static Poison.Menu.Main;
-using static Poison.Utilities.AssetUtilities;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.AssetUtilities;
 
-namespace Poison.Managers
+namespace Spectr.Managers
 {
     public static class AchievementManager
     {
