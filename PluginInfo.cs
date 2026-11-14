@@ -23,7 +23,7 @@ namespace Spectr
 {
     public class PluginInfo
     {
-        public const string GUID = "org.Spectr.gorillatag.Poisonmenu";
+        public const string GUID = "org.Poison.gorillatag.Spectr";
         public const string Name = "Spectr";
         public const string Description = "Community powered mod menu for Gorilla Tag.";
         public const string BuildTimestamp = "2026-10-27T01:32:03Z";
@@ -31,11 +31,11 @@ namespace Spectr
 
         public const string BaseDirectory =
 #if LEGAL || LEGAL_DEBUG
-            "PoisonMenu/Legal";
+            "Spectr/Legal";
 #else
-            "PoisonMenu";
+            "Spectr";
 #endif
-        public const string ClientResourcePath = "PoisonMenu.Resources.Client";
+        public const string ClientResourcePath = "Spectr.Resources.Client";
         public const string ServerResourcePath = "https://raw.githubusercontent.com/heycanihavethis/Spectr/master/Resources/Server";
         public const string ServerAPI = "https://menu.shibagt.com";
         public const string Logo = @"um";
