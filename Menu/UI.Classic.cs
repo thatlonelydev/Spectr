@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using Poison.Classes.Menu;
+using Spectr.Classes.Menu;
 using UnityEngine;
-using static Poison.Menu.Main;
+using static Spectr.Menu.Main;
 
-namespace Poison.Menu
+namespace Spectr.Menu
 {
     public partial class UI
     {
