@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Mods/Projectiles.cs
+ * Spectr Menu  Mods/Projectiles.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -26,11 +26,11 @@ using GorillaNetworking;
 using GorillaTag.CosmeticSystem;
 using Photon.Pun;
 using Photon.Realtime;
-using Poison.Classes.Menu;
-using Poison.Extensions;
-using Poison.Managers;
-using Poison.Menu;
-using Poison.Patches.Menu;
+using Spectr.Classes.Menu;
+using Spectr.Extensions;
+using Spectr.Managers;
+using Spectr.Menu;
+using Spectr.Patches.Menu;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -38,14 +38,14 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static Poison.Extensions.VRRigExtensions;
-using static Poison.Menu.Main;
-using static Poison.Utilities.RandomUtilities;
-using static Poison.Utilities.RigUtilities;
+using static Spectr.Extensions.VRRigExtensions;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.RandomUtilities;
+using static Spectr.Utilities.RigUtilities;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
-namespace Poison.Mods
+namespace Spectr.Mods
 {
     public static class Projectiles
     {
