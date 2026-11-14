@@ -1,9 +1,9 @@
 ﻿/*
- * Poison Menu  Classes/Mods/PortalTrigger.cs
+ * Spectr Menu  Classes/Mods/PortalTrigger.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,13 +20,13 @@
  */
 
 using GorillaLocomotion;
-using Poison.Managers;
-using Poison.Mods;
+using Spectr.Managers;
+using Spectr.Mods;
 using System;
 using System.Linq;
 using UnityEngine;
 
-namespace Poison.Classes.Mods
+namespace Spectr.Classes.Mods
 {
     public class PortalTrigger : MonoBehaviour
     {
