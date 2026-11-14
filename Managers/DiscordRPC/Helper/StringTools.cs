@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text;
 
-namespace Poison.Managers.DiscordRPC.Helper
+namespace Spectr.Managers.DiscordRPC.Helper
 {
     /// <summary>
     /// Collectin of helpful string extensions
