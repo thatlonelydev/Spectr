@@ -1,8 +1,8 @@
 using GorillaNetworking;
 using Photon.Pun;
-using Poison.Classes.Menu;
-using Poison.Extensions;
-using Poison.Managers;
+using Spectr.Classes.Menu;
+using Spectr.Extensions;
+using Spectr.Managers;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,10 +12,10 @@ using UnityEngine;
 
 
 using UnityEngine.InputSystem;
-using static Poison.Menu.Main;
-using static Poison.Utilities.AssetUtilities;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.AssetUtilities;
 
-namespace Poison.Menu
+namespace Spectr.Menu
 {
     public partial class UI : MonoBehaviour
     {
