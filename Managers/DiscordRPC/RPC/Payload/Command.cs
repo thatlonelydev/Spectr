@@ -1,7 +1,7 @@
-﻿using Poison.Managers.DiscordRPC.Converters;
+﻿using Spectr.Managers.DiscordRPC.Converters;
 using System;
 
-namespace Poison.Managers.DiscordRPC.RPC.Payload
+namespace Spectr.Managers.DiscordRPC.RPC.Payload
 {
     /// <summary>
     /// The possible commands that can be sent and received by the server.
