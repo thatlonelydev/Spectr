@@ -1,9 +1,9 @@
 ﻿/*
- * Poison Menu  Classes/Mods/VirtualStumpAd.cs
+ * Spectr Menu  Classes/Mods/VirtualStumpAd.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,9 +23,9 @@ using GorillaExtensions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Video;
-using static Poison.Menu.Main;
+using static Spectr.Menu.Main;
 
-namespace Poison.Classes.Mods
+namespace Spectr.Classes.Mods
 {
     public class VirtualStumpAd : MonoBehaviour
     {
@@ -107,7 +107,7 @@ namespace Poison.Classes.Mods
                 if (featuredMapText != null)
                 {
                     oldText = featuredMapText.text;
-                    featuredMapText.text = "<b><color=#7C00FA>Poison Menu</color></b>";
+                    featuredMapText.text = "<b><color=#7C00FA>Spectr Menu</color></b>";
                     MapInfoText.SetActive(true);
                 }
 
