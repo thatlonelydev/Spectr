@@ -27,7 +27,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'LEGAL_DEBUG'">
-    <AssemblyName>Poison Menu Legal Debug</AssemblyName>
+    <AssemblyName>Spectr Legal Debug</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'DEBUG' Or '$(Configuration)' == 'Debug'">
