@@ -119,7 +119,7 @@ namespace Spectr.Menu
         private readonly Dictionary<string, Texture2D> icons = new Dictionary<string, Texture2D>();
         private readonly Dictionary<ButtonInfo, float> switches = new Dictionary<ButtonInfo, float>();
         private readonly Queue<Action> actions = new Queue<Action>();
-        private readonly string hidePath = Path.Combine(PluginInfo.BaseDirectory, "Poison_HideGUI.txt");
+        private readonly string hidePath = Path.Combine(PluginInfo.BaseDirectory, "Spectr_HideGUI.txt");
 
         private GUIStyle titleStyle;
         private GUIStyle textStyle;
