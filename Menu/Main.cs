@@ -1,5 +1,5 @@
 /*
- * Poison Menu  Menu/Main.cs
+ * SPECTR  Menu/Main.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
  * Copyright (C) 2026  Poison Software
@@ -556,7 +556,7 @@ namespace Poison.Menu
 
                 if (animatedTitle && title != null)
                 {
-                    string targetString = doCustomName ? NoRichtextTags(customMenuName) : "Poison Menu";
+                    string targetString = doCustomName ? NoRichtextTags(customMenuName) : "SPECTR";
                     int length = (int)Mathf.PingPong(Time.time / 0.25f, targetString.Length + 1);
                     title.text = length > 0 ? targetString[..length] : "";
                 }
@@ -2468,7 +2468,7 @@ namespace Poison.Menu
                     }
                 }.AddComponent<TextMeshPro>();
                 title.font = activeFont;
-                title.text = translate ? "Poison" : "<b>Poison</b>";
+                title.text = translate ? "SPECTR" : "<b>SPECTR</b>";
 
                 if (doCustomName)
                     title.text = customMenuName;
@@ -6861,9 +6861,9 @@ jgs \_   _/ |Oo\
         public static string customMenuName = "Your Text Here";
         public static readonly string menuName =
 #if LEGAL
-            "<b>Poison</b> Legal";
+            "<b>SPECTR</b> Legal";
 #else
-            "<b>Poison</b> Menu";
+            "<b>SPECTR</b>";
 #endif
         public static bool doCustomMenuBackground;
         public static bool menuTrail;
