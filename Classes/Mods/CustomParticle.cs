@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Classes/Mods/CustomParticle.cs
+ * Spectr Menu  Classes/Mods/CustomParticle.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,10 +21,10 @@
 
 using GorillaLocomotion;
 using UnityEngine;
-using static Poison.Menu.Main;
-using static Poison.Utilities.RandomUtilities;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.RandomUtilities;
 
-namespace Poison.Classes.Mods
+namespace Spectr.Classes.Mods
 {
     public class CustomParticle : MonoBehaviour
     {
