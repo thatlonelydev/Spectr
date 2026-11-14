@@ -1,5 +1,5 @@
 /*For SharpMonoInjector usage :3
- * Poison Menu  Plugin.cs
+ * SPECTR  Plugin.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *For SharpMonoInjector usage :3
  * Copyright (C) 2026  Poison Software
@@ -32,7 +32,7 @@ namespace Poison
         // Don't merge these methods, it just doesn't work
         public static void Inject()
         {
-            var go = new GameObject("Poison");
+            var go = new GameObject("Spectr");
             go.AddComponent<Injector>();
         }
 
