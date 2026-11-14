@@ -1,6 +1,6 @@
 ﻿using Valve.Newtonsoft.Json;
 
-namespace Poison.Managers.DiscordRPC.RPC.Payload
+namespace Spectr.Managers.DiscordRPC.RPC.Payload
 {
     internal class ClosePayload : IPayload
     {
