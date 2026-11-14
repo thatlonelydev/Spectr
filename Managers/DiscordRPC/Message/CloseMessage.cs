@@ -1,4 +1,4 @@
-﻿namespace Poison.Managers.DiscordRPC.Message
+﻿namespace Spectr.Managers.DiscordRPC.Message
 {
     /// <summary>
     /// Called when the IPC has closed.
