@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Mods/Settings.cs
+ * Spectr Menu  Mods/Settings.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,12 +23,12 @@ using GorillaExtensions;
 using GorillaLocomotion;
 using Photon.Pun;
 using Photon.Realtime;
-using Poison.Classes.Menu;
-using Poison.Extensions;
-using Poison.Managers;
-using Poison.Menu;
-using Poison.Patches.Menu;
-using Poison.Utilities;
+using Spectr.Classes.Menu;
+using Spectr.Extensions;
+using Spectr.Managers;
+using Spectr.Menu;
+using Spectr.Patches.Menu;
+using Spectr.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -44,15 +44,15 @@ using UnityEngine.UI;
 using UnityEngine.Video;
 using UnityEngine.Windows.Speech;
 using UnityEngine.XR;
-using static Poison.Menu.Main;
-using static Poison.Utilities.AssetUtilities;
-using static Poison.Utilities.RigUtilities;
-using Console = Poison.Classes.Menu.Console;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.AssetUtilities;
+using static Spectr.Utilities.RigUtilities;
+using Console = Spectr.Classes.Menu.Console;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 using UnityEngine;
 
-namespace Poison.Mods
+namespace Spectr.Mods
 {
     public static class Settings
     {
@@ -338,7 +338,7 @@ namespace Poison.Mods
             string version = PluginInfo.Version;
             if (PluginInfo.BetaBuild) version = "<color=blue>Beta</color> " + version;
             Buttons.AddButton(category, new ButtonInfo { buttonText = "Exit Info Screen", method = () => Toggle("Info Screen"), isTogglable = false, toolTip = "Returns you back to the main page." });
-            Buttons.AddButton(category, new ButtonInfo { buttonText = "DebugMenuName", overlapText = "<color=grey><b>Poison Menu </b></color>" + version, label = true });
+            Buttons.AddButton(category, new ButtonInfo { buttonText = "DebugMenuName", overlapText = "<color=grey><b>Spectr Menu </b></color>" + version, label = true });
             Buttons.AddButton(category, new ButtonInfo { buttonText = "DebugColor", overlapText = "Loading...", label = true });
             Buttons.AddButton(category, new ButtonInfo { buttonText = "DebugName", overlapText = "Loading...", label = true });
             Buttons.AddButton(category, new ButtonInfo { buttonText = "DebugId", overlapText = "Loading...", label = true });
@@ -886,7 +886,7 @@ namespace Poison.Mods
                             logoLines += Environment.NewLine + @" ""    " + line + @" """;
 
                         string updateScript = @"@echo off
-title Poison Menu Updater
+title Spectr Menu Updater
 color 5
 setlocal
 
@@ -903,7 +903,7 @@ set ""MODS_PATH=%BASE_DIR%Mods""
 
 set ""MENU_FILE=""
 
-for %%F in (""%PLUGIN_PATH%\*Poison*Menu*.dll"" ""%MODS_PATH%\*Poison*Menu*.dll"") do (
+for %%F in (""%PLUGIN_PATH%\*Spectr*Menu*.dll"" ""%MODS_PATH%\*Spectr*Menu*.dll"") do (
     if exist ""%%~fF"" (
         set ""MENU_FILE=%%~fF""
         goto update
@@ -916,14 +916,14 @@ goto restart
 :update
 echo Found menu file: ""%MENU_FILE%""
 
-set ""DOWNLOAD_NAME=Poison-Menu""
+set ""DOWNLOAD_NAME=Spectr-Menu""
 echo %MENU_FILE% | find /I ""Legal"" >nul
-if %ERRORLEVEL%==0 set ""DOWNLOAD_NAME=Poison-Menu-Legal""
+if %ERRORLEVEL%==0 set ""DOWNLOAD_NAME=Spectr-Menu-Legal""
 
 echo Downloading latest release of %DOWNLOAD_NAME%...
 
 curl -L -o ""%MENU_FILE%"" ^
-""https://github.com/heycanihavethis/Poison/releases/latest/download/%DOWNLOAD_NAME%.dll""
+""https://github.com/heycanihavethis/Spectr/releases/latest/download/%DOWNLOAD_NAME%.dll""
 
 :WAIT_LOOP
 tasklist /FI ""IMAGENAME eq Gorilla Tag.exe"" | find /I ""Gorilla Tag.exe"" >nul
@@ -966,7 +966,7 @@ MODS_PATH=""$BASE_DIR/Mods""
 
 MENU_FILE=""""
 
-for f in ""$PLUGIN_PATH""/*Poison*Menu*.dll ""$MODS_PATH""/*Poison*Menu*.dll; do
+for f in ""$PLUGIN_PATH""/*Spectr*Menu*.dll ""$MODS_PATH""/*Spectr*Menu*.dll; do
     if [ -f ""$f"" ]; then
         MENU_FILE=""$f""
         break
@@ -978,14 +978,14 @@ if [ -z ""$MENU_FILE"" ]; then
 else
     echo ""Found menu file: $MENU_FILE""
 
-    DOWNLOAD_NAME=""Poison-Menu""
+    DOWNLOAD_NAME=""Spectr-Menu""
     if echo ""$MENU_FILE"" | grep -qi ""Legal""; then
-        DOWNLOAD_NAME=""Poison-Menu-Legal""
+        DOWNLOAD_NAME=""Spectr-Menu-Legal""
     fi
 
     echo ""Downloading latest release of $DOWNLOAD_NAME...""
     curl -L -o ""$MENU_FILE"" \
-    ""https://github.com/heycanihavethis/Poison/releases/latest/download/${DOWNLOAD_NAME}.dll""
+    ""https://github.com/heycanihavethis/Spectr/releases/latest/download/${DOWNLOAD_NAME}.dll""
 fi
 
 while pgrep -f ""GorillaTag.exe"" > /dev/null; do
@@ -1104,7 +1104,7 @@ exit 0";
         {
             new ThemeDefinition
             {
-                Name = "Poison",
+                Name = "Spectr",
                 Background = () => new ExtGradient
                 {
                     colors = ExtGradient.GetSolidGradient(new Color32(6, 252, 118, 128))
@@ -4119,7 +4119,7 @@ exit 0";
 
         private static KeywordRecognizer mainPhrases;
         private static KeywordRecognizer modPhrases;
-        private static string[] keyWords = { "jarvis", "Poison", "seralith", "sarolith", "siri", "google", "alexa", "dummy", "computer", "stinky", "silly", "stupid", "console", "go go gadget", "monika", "wikipedia", "gideon", "a i", "ai", "a.i", "chat gpt", "chatgpt", "grok", "grock", "groq", "garmin" };
+        private static string[] keyWords = { "jarvis", "Spectr", "seralith", "sarolith", "siri", "google", "alexa", "dummy", "computer", "stinky", "silly", "stupid", "console", "go go gadget", "monika", "wikipedia", "gideon", "a i", "ai", "a.i", "chat gpt", "chatgpt", "grok", "grock", "groq", "garmin" };
         private static readonly string[] cancelKeywords = { "nevermind", "cancel", "never mind", "stop", "i hate you", "die" };
         public static void VoiceRecognitionOn()
         {
