@@ -18,18 +18,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-using Poison.Classes.Menu;
-using Poison.Managers;
-using Poison.Menu;
-using Poison.Patches;
-using Poison.Patches.Menu;
+using Spectr.Classes.Menu;
+using Spectr.Managers;
+using Spectr.Menu;
+using Spectr.Patches;
+using Spectr.Patches.Menu;
 using System;
 using System.Collections;
 using System.IO;
 using System.Linq;
 using UnityEngine;
 
-namespace Poison
+namespace Spectr
 {
     internal static class Bootstrapper
     {
@@ -65,16 +65,16 @@ namespace Poison
                     Directory.CreateDirectory(target);
             }
             PatchHandler.PatchAll(true);
-            if (File.Exists($"{PluginInfo.BaseDirectory}/Poison_Preferences.txt"))
+            if (File.Exists($"{PluginInfo.BaseDirectory}/Spectr_Preferences.txt"))
             {
-                if (File.ReadAllLines($"{PluginInfo.BaseDirectory}/Poison_Preferences.txt")[0]
+                if (File.ReadAllLines($"{PluginInfo.BaseDirectory}/Spectr_Preferences.txt")[0]
                     .Split(";;")
                     .Contains("Accept TOS"))
                 {
                     TOSPatches.enabled = true;
                 }
             }
-            if (File.Exists($"{PluginInfo.BaseDirectory}/Poison_DisableTelemetry.txt"))
+            if (File.Exists($"{PluginInfo.BaseDirectory}/Spectr_DisableTelemetry.txt"))
                 ServerData.DisableTelemetry = true;
             GorillaTagger.OnPlayerSpawned(LoadMenu);
             try { Classes.Menu.VanillaPropsBaseline.Load(); } catch { }
@@ -88,8 +88,8 @@ namespace Poison
             Loader.AddComponent<CustomBoardManager>();
             Loader.AddComponent<UI>();
             Loader.AddComponent<Hud>();
-            Loader.AddComponent<Poison.Classes.Menu.Console>();
-            Loader.AddComponent<Poison.Classes.Menu.ServerData>();
+            Loader.AddComponent<Spectr.Classes.Menu.Console>();
+            Loader.AddComponent<Spectr.Classes.Menu.ServerData>();
             UnityEngine.Object.DontDestroyOnLoad(Loader);
             coroutineManager.StartCoroutine(PatchIntegrityLoop());
         }
