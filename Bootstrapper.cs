@@ -1,5 +1,5 @@
 /*
- * Poison Menu  Bootstrapper.cs
+ * SPECTR  Bootstrapper.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
  * Copyright (C) 2026  Poison Software
@@ -82,7 +82,7 @@ namespace Poison
         private static void LoadMenu()
         {
             PatchHandler.PatchAll();
-            Loader = new GameObject("Poison_Loader");
+            Loader = new GameObject("Spectr_Loader");
             CoroutineManager coroutineManager = Loader.AddComponent<CoroutineManager>();
             Loader.AddComponent<NotificationManager>();
             Loader.AddComponent<CustomBoardManager>();
