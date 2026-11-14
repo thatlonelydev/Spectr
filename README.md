@@ -5,8 +5,8 @@
 ---
 
 <p align="center">
-	<a href="https://github.com/thatlonelydev/Spectr/releases"><img src="https://img.shields.io/github/v/release/heycanihavethis/Poison?label=version&style=for-the-badge"></a>
-	<a href="https://github.com/thatlonelydev/Spectr/releases/latest"><img src="https://img.shields.io/github/downloads/heycanihavethis/Poison/latest/Spectr.dll?style=for-the-badge"></a>
+	<a href="https://github.com/thatlonelydev/Spectr/releases"><img src="https://img.shields.io/github/v/release/thatlonelydev/Spectr?label=version&style=for-the-badge"></a>
+	<a href="https://github.com/thatlonelydev/Spectr/releases/latest"><img src="https://img.shields.io/github/downloads/thatlonelydev/Spectr/latest/Spectr.dll?style=for-the-badge"></a>
 	<a href="https://discord.gg/seralyth"><img src="https://img.shields.io/discord/1500168360787447909?label=discord&style=for-the-badge&color=blueviolet"></a>
 </p>
 
@@ -115,7 +115,7 @@ If you wish to support us, here are some of the ways you can!
 | Ethereum   | [![ETH](https://img.shields.io/badge/Ethereum-Donate-blue?style=for-the-badge&logo=ethereum)](ethereum:0xf91E9d3e40131409c6c081537523dE25e7C56648) | [0xf91E9d3e40131409c6c081537523dE25e7C56648](ethereum:0xf91E9d3e40131409c6c081537523dE25e7C56648) |
 | Litecoin   | [![LTC](https://img.shields.io/badge/Litecoin-Donate-lightgrey?style=for-the-badge&logo=litecoin)](litecoin:LKztFcWGnRdvDVKrqmmfFYQPfXqPQEjWod) | [LKztFcWGnRdvDVKrqmmfFYQPfXqPQEjWod](litecoin:LKztFcWGnRdvDVKrqmmfFYQPfXqPQEjWod) |
 | Bitcoin   | [![BTC](https://img.shields.io/badge/Bitcoin-Donate-orange?style=for-the-badge&logo=Bitcoin)](bitcoin:bc1qndjxuyeydvmse7dajehm6gxq3dcmlh0wtum0cv) | [bc1qndjxuyeydvmse7dajehm6gxq3dcmlh0wtum0cv](bitcoin:bc1qndjxuyeydvmse7dajehm6gxq3dcmlh0wtum0cv) |
-| Ko-fi | [![Ko-fi](https://img.shields.io/badge/Ko--fi-Poison-purple?style=for-the-badge&logo=ko-fi)](https://ko-fi.com/mullvad) | [Poison](https://ko-fi.com/mullvad) |
+
 
 </details>
 
@@ -132,8 +132,9 @@ If you wish to support us, here are some of the ways you can!
 > SPECTR  README.md<br>
 > A community driven mod menu for Gorilla Tag with over 1000+ mods
 >
-> Copyright (C) 2026  Poison Software
-> https://github.com/heycanihavethis/poison
+> Original upstream copyright and branding exclusions are retained in accordance with the source repository's licensing terms.
+> SPECTR rebrand and modifications by That Lonely Dev.
+> https://github.com/thatlonelydev/Spectr
 > 
 > This program is free software: you can redistribute it and/or modify
 > it under the terms of the GNU General Public License as published by
