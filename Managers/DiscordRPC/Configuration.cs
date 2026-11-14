@@ -1,6 +1,6 @@
 ﻿using Valve.Newtonsoft.Json;
 
-namespace Poison.Managers.DiscordRPC
+namespace Spectr.Managers.DiscordRPC
 {
     /// <summary>
     /// Configuration of the current RPC connection
