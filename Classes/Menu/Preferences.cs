@@ -1,9 +1,9 @@
 ﻿/*
- * Poison Menu  Mods/Preferences.cs
+ * Spectr Menu  Mods/Preferences.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,9 +20,9 @@
  */
 
 using Photon.Pun;
-using Poison.Managers;
-using Poison.Menu;
-using Poison.Mods;
+using Spectr.Managers;
+using Spectr.Menu;
+using Spectr.Mods;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -30,9 +30,9 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 using Valve.Newtonsoft.Json;
-using static Poison.Menu.Main;
+using static Spectr.Menu.Main;
 
-namespace Poison.Classes.Menu
+namespace Spectr.Classes.Menu
 {
     public static class Preferences
     {
@@ -351,7 +351,7 @@ namespace Poison.Classes.Menu
             MaybePromptSeralythMigration();
         }
 
-        private static string SeralythPath => Path.Combine(Poison.Utilities.FileUtilities.GetGamePath(), "SeralythMenu", "Seralyth_Preferences.json");
+        private static string SeralythPath => Path.Combine(Spectr.Utilities.FileUtilities.GetGamePath(), "SeralythMenu", "Seralyth_Preferences.json");
 
         public static bool HasSeralythSettings()
         {
