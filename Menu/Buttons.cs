@@ -2610,7 +2610,7 @@ namespace Poison.Menu
             new[] { // Credits [38]
                 new ButtonInfo { buttonText = "Exit Credits", method =() => CurrentCategoryName = "Main", isTogglable = false, toolTip = "Returns you back to the main page.", legal = true},
 
-                new ButtonInfo { buttonText = "Snake", method =() => Process.Start("https://csharp.straw.page"), isTogglable = false, toolTip = "Snake is the current owner of Poison and Poison Menu, he is the sexiest person alive." },
+                new ButtonInfo { buttonText = "Snake", method =() => Process.Start("https://csharp.straw.page"), isTogglable = false, toolTip = "SPECTR is developed and maintained by That Lonely Dev." },
                 new ButtonInfo { buttonText = "Kingofnetflix", isTogglable = false, toolTip = "Kingofnetflix is the creator of <b>Seralyth (Menu)</b>, and was a developer for ii's <b>Stupid</b> Menu. Quit modding and the modding community August 2026." },
                 new ButtonInfo { buttonText = "iiDk", method =() => Process.Start("https://tianjo.cc/iidk"), isTogglable = false, toolTip = "iiDk is the creator of ii's <b>Stupid</b> Menu (which this menu is forked from), and was working on it since 2023. He was also the owner of ii's Stupid Mods. Both have shut down ever since 2/24/2026.", legal = true},
 
