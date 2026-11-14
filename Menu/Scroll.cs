@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Poison.Menu
+namespace Spectr.Menu
 {
     internal sealed class Scroll
     {
