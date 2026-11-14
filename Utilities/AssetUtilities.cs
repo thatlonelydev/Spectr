@@ -42,7 +42,7 @@ namespace Spectr.Utilities
                 return;
             bundleLoadAttempted = true;
 
-            Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream($"{PluginInfo.ClientResourcePath}.poisonmenu");
+            Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream($"{PluginInfo.ClientResourcePath}.spectrmenu");
             if (stream != null)
                 assetBundle = AssetBundle.LoadFromStream(stream);
             else
