@@ -1,6 +1,6 @@
-﻿using Poison.Managers.DiscordRPC.Message;
+﻿using Spectr.Managers.DiscordRPC.Message;
 
-namespace Poison.Managers.DiscordRPC.Events
+namespace Spectr.Managers.DiscordRPC.Events
 {
     /// <summary>
     /// Called when the Discord Client is ready to send and receive messages.
