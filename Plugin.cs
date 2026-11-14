@@ -2,8 +2,8 @@
  * SPECTR  Plugin.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *For SharpMonoInjector usage :3
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *For SharpMonoInjector usage :3
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,12 +19,12 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>. g
  */
 
-using Poison.Managers;
-using Poison.Menu;
+using Spectr.Managers;
+using Spectr.Menu;
 using UnityEngine;
 
 
-namespace Poison
+namespace Spectr
 {
     public static class Plugin
     {
@@ -38,7 +38,7 @@ namespace Poison
 
         public static void InjectDontDestroy()
         {
-            var go = new GameObject("Poison");
+            var go = new GameObject("Spectr");
             Object.DontDestroyOnLoad(go);
             go.AddComponent<Injector>();
         }
