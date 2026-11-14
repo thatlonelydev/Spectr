@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Utilities/AssetUtilities.cs
+ * Spectr Menu  Utilities/AssetUtilities.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,7 +19,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-using Poison.Managers;
+using Spectr.Managers;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -28,9 +28,9 @@ using System.Net;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.Networking;
-using static Poison.Utilities.FileUtilities;
+using static Spectr.Utilities.FileUtilities;
 
-namespace Poison.Utilities
+namespace Spectr.Utilities
 {
     public class AssetUtilities
     {
