@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Poison.Managers.DiscordRPC.Helper
+namespace Spectr.Managers.DiscordRPC.Helper
 {
 
     internal class BackoffDelay
