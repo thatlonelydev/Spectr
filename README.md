@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="#"><img src="Resources/GitHub/icon-transparent.png" width="250"></a><a href="#"><img src="Resources/GitHub/title.png" width="500"></a>
+  <img src="Resources/GitHub/spectr-logo.svg" width="720" alt="SPECTR">
 </p>
 
 ---
