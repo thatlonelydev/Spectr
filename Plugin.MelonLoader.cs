@@ -1,5 +1,5 @@
 /*
- * Poison Menu  Plugin.MelonLoader.cs
+ * SPECTR  Plugin.MelonLoader.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
  * Copyright (C) 2026  Poison Software
@@ -23,7 +23,7 @@
 using MelonLoader;
 using Poison.Managers;
 
-[assembly: MelonInfo(typeof(Poison.PluginMelonLoader), Poison.PluginInfo.Name, Poison.PluginInfo.Version, "Poison")]
+[assembly: MelonInfo(typeof(Poison.PluginMelonLoader), Poison.PluginInfo.Name, Poison.PluginInfo.Version, "That Lonely Dev")]
 [assembly: MelonOptionalDependencies("BepInEx")]
 namespace Poison
 {
