@@ -1,16 +1,16 @@
-﻿using Poison.Managers.DiscordRPC.Events;
-using Poison.Managers.DiscordRPC.Helper;
-using Poison.Managers.DiscordRPC.IO;
-using Poison.Managers.DiscordRPC.Logging;
-using Poison.Managers.DiscordRPC.Message;
-using Poison.Managers.DiscordRPC.RPC.Commands;
-using Poison.Managers.DiscordRPC.RPC.Payload;
+﻿using Spectr.Managers.DiscordRPC.Events;
+using Spectr.Managers.DiscordRPC.Helper;
+using Spectr.Managers.DiscordRPC.IO;
+using Spectr.Managers.DiscordRPC.Logging;
+using Spectr.Managers.DiscordRPC.Message;
+using Spectr.Managers.DiscordRPC.RPC.Commands;
+using Spectr.Managers.DiscordRPC.RPC.Payload;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using Valve.Newtonsoft.Json;
 
-namespace Poison.Managers.DiscordRPC.RPC
+namespace Spectr.Managers.DiscordRPC.RPC
 {
     /// <summary>
     /// Communicates between the client and discord through RPC
