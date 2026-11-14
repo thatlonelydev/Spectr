@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Patches/Menu/PostGetData.cs
+ * Spectr Menu  Patches/Menu/PostGetData.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,9 +22,9 @@
 using GorillaNetworking;
 using GorillaNetworking.Store;
 using HarmonyLib;
-using static Poison.Menu.Main;
+using static Spectr.Menu.Main;
 
-namespace Poison.Patches.Menu
+namespace Spectr.Patches.Menu
 {
     [HarmonyPatch(typeof(BundleManager), nameof(BundleManager.CheckIfBundlesOwned))]
     public class PostGetData
