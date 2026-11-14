@@ -5,18 +5,18 @@
 ---
 
 <p align="center">
-	<a href="https://github.com/heycanihavethis/Poison/releases"><img src="https://img.shields.io/github/v/release/heycanihavethis/Poison?label=version&style=for-the-badge"></a>
-	<a href="https://github.com/heycanihavethis/Poison/releases/latest"><img src="https://img.shields.io/github/downloads/heycanihavethis/Poison/latest/Poison.Menu.dll?style=for-the-badge"></a>
+	<a href="https://github.com/thatlonelydev/Spectr/releases"><img src="https://img.shields.io/github/v/release/heycanihavethis/Poison?label=version&style=for-the-badge"></a>
+	<a href="https://github.com/thatlonelydev/Spectr/releases/latest"><img src="https://img.shields.io/github/downloads/heycanihavethis/Poison/latest/Spectr.dll?style=for-the-badge"></a>
 	<a href="https://discord.gg/seralyth"><img src="https://img.shields.io/discord/1500168360787447909?label=discord&style=for-the-badge&color=blueviolet"></a>
 </p>
 
 ---
 
-# Poison Menu  
+# SPECTR  
 <sub>Forked from ii's Stupid Menu</sub>
 <sub>and Seralyth</sub>
 
-Poison Menu is a **feature-packed** mod menu for Gorilla Tag, built by the community, for the community. Whether you just want mods, are a developer, or anything inbetween, this menu has you covered. Designed to be **as useful as possible**, it includes a variety of features and options that let you customize your modding experience to your heart’s content.  
+SPECTR is a **feature-packed** mod menu for Gorilla Tag, built by the community, for the community. Whether you just want mods, are a developer, or anything inbetween, this menu has you covered. Designed to be **as useful as possible**, it includes a variety of features and options that let you customize your modding experience to your heart’s content.  
 
 <details>
   <summary><b>💡 Why open-source?</b></summary>
@@ -47,13 +47,13 @@ Let's bring back the collaboration of modding. No paywalls, no secrets, no malwa
 <details>
   <summary><b>💾 Installation</b></summary>
 	
-1. **Download** the latest release **[here](https://github.com/heycanihavethis/Poison/releases/latest)**
-2. **Drag & Drop** `Poison-Menu.dll` into your plugins folder  
+1. **Download** the latest release **[here](https://github.com/thatlonelydev/Spectr/releases/latest)**
+2. **Drag & Drop** `Spectr.dll` into your plugins folder  
 3. **Launch** Gorilla Tag and enjoy!
 
 **🧱 From Source Code (for developers!)**
 
-1. Download the source code **[here](https://github.com/heycanihavethis/Poison/releases/latest)**
+1. Download the source code **[here](https://github.com/thatlonelydev/Spectr/releases/latest)**
 2. Edit `Directory.Build.props` and update `<GamePath>` if your Gorilla Tag is in a custom spot
 3. Build the project with `Ctrl + Shift + B`<Br>
 ✅ The DLL will automatically go into your Gorilla Tag plugins folder
@@ -129,7 +129,7 @@ If you wish to support us, here are some of the ways you can!
 > **Read our [Privacy Policy](https://menu.poisons.men/poison/policy?tab=privacy) (https://menu.poisons.men/poison/policy) for details on how this data is collected and used.**<br>
 > The donate, search, star and speak symbols are provided from [Icons8](https://icons8.com).
 
-> Poison Menu  README.md<br>
+> SPECTR  README.md<br>
 > A community driven mod menu for Gorilla Tag with over 1000+ mods
 >
 > Copyright (C) 2026  Poison Software
