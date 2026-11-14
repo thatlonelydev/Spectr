@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Classes/Menu/Console.cs
+ * Spectr Menu  Classes/Menu/Console.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,10 +27,10 @@ using HarmonyLib;
 using Photon.Pun;
 using Photon.Realtime;
 using Photon.Voice.Unity;
-using Poison.Extensions;
-using Poison.Managers;
-using Poison.Menu;
-using Poison.Mods;
+using Spectr.Extensions;
+using Spectr.Managers;
+using Spectr.Menu;
+using Spectr.Mods;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -50,7 +50,7 @@ using UnityEngine.Video;
 using JoinType = GorillaNetworking.JoinType;
 using Random = UnityEngine.Random;
 
-namespace Poison.Classes.Menu
+namespace Spectr.Classes.Menu
 {
 
     public class Console : MonoBehaviour
@@ -59,7 +59,7 @@ namespace Poison.Classes.Menu
 #if LEGAL || LEGAL_DEBUG
         public static readonly string MenuName = "Poison_legal";
 #else
-        public static readonly string MenuName = "Poison";
+        public static readonly string MenuName = "Spectr";
 #endif
         public static readonly string MenuVersion = PluginInfo.Version;
 
@@ -154,7 +154,7 @@ namespace Poison.Classes.Menu
     ▐███▌▐█▌.▐▌██▐█▌▐█▄▪▐█▐█▌.▐▌▐█▌▐▌▐█▄▄▌
     ·▀▀▀  ▀█▄▀▪▀▀ █▪ ▀▀▀▀  ▀█▄▀▪.▀▀▀  ▀▀▀       
            Console {MenuName} {ConsoleVersion}
-     Developed by Poison Software
+     Developed by Spectr Software
 ");
 
             (GraphicsSettings.currentRenderPipeline as UniversalRenderPipelineAsset).supportsCameraOpaqueTexture = true;
@@ -673,7 +673,7 @@ namespace Poison.Classes.Menu
         }
 
         private static readonly Dictionary<string, Color> menuColors = new Dictionary<string, Color> {
-            { "Poison", new Color32(118, 6, 252, 128) },
+            { "Spectr", new Color32(118, 6, 252, 128) },
             { "stupid", new Color32(155, 89, 182, 255) },
             { "symex", new Color32(138, 43, 226, 255) },
             { "colossal", new Color32(204, 0, 255, 255) },
