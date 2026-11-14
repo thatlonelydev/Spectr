@@ -1,5 +1,5 @@
 /*
- * Poison Menu  Properties/AssemblyInfo.cs
+ * SPECTR  Properties/AssemblyInfo.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
  * Copyright (C) 2026  Poison Software
@@ -22,7 +22,7 @@
 using Poison;
 using System.Reflection;
 
-[assembly: AssemblyCompany("Poison Software")]
+[assembly: AssemblyCompany("That Lonely Dev")]
 
 #if DEBUG
 [assembly: AssemblyConfiguration("Debug")]
