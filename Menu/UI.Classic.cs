@@ -9,10 +9,10 @@ namespace Poison.Menu
     public partial class UI
     {
         private static readonly string[] tabNames = { "Modules", "Config", "Main Settings", "Quality Settings", "Input" };
-        private static readonly Color textColor = new Color32(224, 224, 224, 255);
-        private static readonly Color dimColor = new Color32(146, 146, 146, 255);
-        private static readonly Color cardColor = new Color32(13, 13, 13, 255);
-        private static readonly Color lineColor = new Color32(43, 43, 43, 255);
+        private static readonly Color textColor = new Color32(245, 241, 255, 255);
+        private static readonly Color dimColor = new Color32(165, 151, 190, 255);
+        private static readonly Color cardColor = new Color32(18, 12, 31, 255);
+        private static readonly Color lineColor = new Color32(66, 48, 100, 255);
         private const float SidebarWidth = 140;
         private const float ContentLeft = 168;
         private const float TabStep = 134;
@@ -68,7 +68,7 @@ namespace Poison.Menu
         {
             bool hovered = GUI.enabled && pointerInside && rect.Contains(GuiPoint);
             Color fill = !flat && hovered ? (Color)new Color32(31, 31, 31, 255) : cardColor;
-            Fill(rect, fill, 2);
+            Fill(rect, fill, 9);
             bool clicked = MenuButton(rect, GUIContent.none, GUIStyle.none);
             FitLabel(rect, caption, centerStyle, GUI.enabled ? textColor : dimColor);
             return clicked;
@@ -122,7 +122,7 @@ namespace Poison.Menu
             SetupClassic();
             Rect window = WindowRect(width, height);
             DragWindow(ref window, width, height);
-            Fill(window, Color.black, 2);
+            Fill(window, new Color32(8, 5, 16, 255), 14);
 
             bool inside = pointerInside;
             pointerInside = window.Contains(GuiPoint);
