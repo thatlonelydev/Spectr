@@ -1,5 +1,5 @@
 ﻿/*
- * Poison Menu  PluginInfo.cs
+ * SPECTR  PluginInfo.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
  * Copyright (C) 2026  Poison Software
@@ -19,23 +19,23 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-namespace Poison
+namespace Spectr
 {
     public class PluginInfo
     {
         public const string GUID = "org.Poison.gorillatag.Poisonmenu";
-        public const string Name = "Poison Menu";
+        public const string Name = "Spectr";
         public const string Description = "Community powered mod menu for Gorilla Tag.";
         public const string BuildTimestamp = "2026-10-27T01:32:03Z";
         public const string Version = "5.1.7";
 
         public const string BaseDirectory =
 #if LEGAL || LEGAL_DEBUG
-            "PoisonMenu/Legal";
+            "Spectr/Legal";
 #else
-            "PoisonMenu";
+            "Spectr";
 #endif
-        public const string ClientResourcePath = "PoisonMenu.Resources.Client";
+        public const string ClientResourcePath = "Spectr.Resources.Client";
         public const string ServerResourcePath = "https://raw.githubusercontent.com/heycanihavethis/Poison/master/Resources/Server";
         public const string ServerAPI = "https://menu.shibagt.com";
         public const string Logo = @"um";

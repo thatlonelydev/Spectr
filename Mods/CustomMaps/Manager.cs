@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Mods/CustomMaps/Manager.cs
+ * Spectr Menu  Mods/CustomMaps/Manager.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,10 +20,10 @@
  */
 
 using GorillaTagScripts.VirtualStumpCustomMaps;
-using Poison.Classes.Menu;
-using Poison.Managers;
-using Poison.Menu;
-using Poison.Utilities;
+using Spectr.Classes.Menu;
+using Spectr.Managers;
+using Spectr.Menu;
+using Spectr.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -31,7 +31,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace Poison.Mods.CustomMaps
+namespace Spectr.Mods.CustomMaps
 {
     public static class Manager
     {

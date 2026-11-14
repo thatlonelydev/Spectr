@@ -1,6 +1,6 @@
-﻿using Poison.Managers.DiscordRPC.RPC.Payload;
+﻿using Spectr.Managers.DiscordRPC.RPC.Payload;
 
-namespace Poison.Managers.DiscordRPC.Message
+namespace Spectr.Managers.DiscordRPC.Message
 {
     /// <summary>
     /// Called as validation of a subscribe

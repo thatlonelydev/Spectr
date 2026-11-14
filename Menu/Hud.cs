@@ -1,4 +1,4 @@
-using Poison.Classes.Menu;
+using Spectr.Classes.Menu;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR;
 
-namespace Poison.Menu
+namespace Spectr.Menu
 {
     public class Hud : MonoBehaviour
     {
@@ -259,7 +259,7 @@ namespace Poison.Menu
         void Build()
         {
             if (root != null) return;
-            root = new GameObject("PoisonHud");
+            root = new GameObject("SpectrHud");
             root.transform.SetParent(transform, false);
             overlayMaterial = BuildOverlayMaterial();
             BuildWatermark();
@@ -797,7 +797,7 @@ namespace Poison.Menu
             rect.sizeDelta = new Vector2(640f, 80f);
             watermark.transform.localScale = Vector3.one * WindowScale;
 
-            watermarkTitle = WatermarkText(rect, "Poison", new Vector2(-250f, 6f), new Vector2(440f, 34f), 30, TextAlignmentOptions.Left, theme.bright);
+            watermarkTitle = WatermarkText(rect, "SPECTR", new Vector2(-250f, 6f), new Vector2(440f, 34f), 30, TextAlignmentOptions.Left, theme.bright);
             watermarkSub = WatermarkText(rect, "v" + PluginInfo.Version, new Vector2(-250f, -16f), new Vector2(440f, 14f), 11, TextAlignmentOptions.Left, theme.muted);
             watermarkStat = WatermarkText(rect, "", new Vector2(230f, 0f), new Vector2(220f, 34f), 16, TextAlignmentOptions.Right, theme.muted);
         }
@@ -962,7 +962,7 @@ namespace Poison.Menu
         Window BuildSidebar(List<Leaf> leaves)
         {
             Theme theme = CurrentTheme();
-            Window window = BuildShell("Poison", true, GetState(SidebarKey), leaves.Count, theme.rowHeight, theme, out RectTransform content);
+            Window window = BuildShell("SPECTR", true, GetState(SidebarKey), leaves.Count, theme.rowHeight, theme, out RectTransform content);
             window.state.yaw = SideYaw;
             window.state.pitch = SidePitch;
             window.state.placed = true;
@@ -1351,8 +1351,8 @@ namespace Poison.Menu
         {
             string code = roomCode.Trim().ToUpper();
             if (code.Length == 0) return;
-            Poison.Managers.NotificationManager.SendNotification($"<color=grey>[</color><color=green>JOIN</color><color=grey>]</color> Joining room {code}...");
-            Poison.Managers.CoroutineManager.instance.StartCoroutine(Poison.Classes.Menu.Console.JoinRoom(code));
+            Spectr.Managers.NotificationManager.SendNotification($"<color=grey>[</color><color=green>JOIN</color><color=grey>]</color> Joining room {code}...");
+            Spectr.Managers.CoroutineManager.instance.StartCoroutine(Spectr.Classes.Menu.Console.JoinRoom(code));
         }
 
         void SetPlayerName()
@@ -1360,7 +1360,7 @@ namespace Poison.Menu
             string name = playerName.Trim();
             if (name.Length == 0) return;
             Main.ChangeName(name, true);
-            Poison.Managers.NotificationManager.SendNotification($"<color=grey>[</color><color=green>NAME</color><color=grey>]</color> Name set to {name}");
+            Spectr.Managers.NotificationManager.SendNotification($"<color=grey>[</color><color=green>NAME</color><color=grey>]</color> Name set to {name}");
         }
 
         void ApplyQuickColor()
@@ -1602,8 +1602,8 @@ namespace Poison.Menu
 
         void BuildLaser()
         {
-            laser = NewLaser("PoisonLaser");
-            pointer = NewPointer("PoisonPointer", out pointerOuter, out pointerInner, out pointerPulse);
+            laser = NewLaser("SpectrLaser");
+            pointer = NewPointer("SpectrPointer", out pointerOuter, out pointerInner, out pointerPulse);
             pointer.SetActive(false);
         }
 

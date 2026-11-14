@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Classes/Menu/ButtonInfo.cs
+ * Spectr Menu  Classes/Menu/ButtonInfo.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,10 +19,10 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-using Poison.Managers;
+using Spectr.Managers;
 using System;
 
-namespace Poison.Classes.Menu
+namespace Spectr.Classes.Menu
 {
     public class ButtonInfo
     {

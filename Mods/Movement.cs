@@ -1,9 +1,9 @@
 ﻿/*
- * Poison Menu  Mods/Movement.cs
+ * Spectr Menu  Mods/Movement.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,13 +28,13 @@ using GorillaNetworking;
 using GorillaTag.Gravity;
 using Photon.Pun;
 using Photon.Realtime;
-using Poison.Classes.Menu;
-using Poison.Classes.Mods;
-using Poison.Extensions;
-using Poison.Managers;
-using Poison.Menu;
-using Poison.Patches.Menu;
-using Poison.Utilities;
+using Spectr.Classes.Menu;
+using Spectr.Classes.Mods;
+using Spectr.Extensions;
+using Spectr.Managers;
+using Spectr.Menu;
+using Spectr.Patches.Menu;
+using Spectr.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -48,14 +48,14 @@ using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using UnityEngine.XR;
 using Valve.Newtonsoft.Json.Linq;
-using static Poison.Menu.Main;
-using static Poison.Utilities.AssetUtilities;
-using static Poison.Utilities.RandomUtilities;
-using static Poison.Utilities.RigUtilities;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.AssetUtilities;
+using static Spectr.Utilities.RandomUtilities;
+using static Spectr.Utilities.RigUtilities;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
-namespace Poison.Mods
+namespace Spectr.Mods
 {
     public static class Movement
     {

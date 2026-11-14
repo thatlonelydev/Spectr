@@ -1,5 +1,5 @@
 /*
- * Poison Menu  Utilities/AssetUtilities.cs
+ * Spectr Menu  Utilities/AssetUtilities.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
  * Copyright (C) 2026  Poison Software
@@ -19,7 +19,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-using Poison.Managers;
+using Spectr.Managers;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -28,9 +28,9 @@ using System.Net;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.Networking;
-using static Poison.Utilities.FileUtilities;
+using static Spectr.Utilities.FileUtilities;
 
-namespace Poison.Utilities
+namespace Spectr.Utilities
 {
     public class AssetUtilities
     {
@@ -42,7 +42,7 @@ namespace Poison.Utilities
                 return;
             bundleLoadAttempted = true;
 
-            Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream($"{PluginInfo.ClientResourcePath}.poisonmenu");
+            Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream($"{PluginInfo.ClientResourcePath}.spectrmenu");
             if (stream != null)
                 assetBundle = AssetBundle.LoadFromStream(stream);
             else

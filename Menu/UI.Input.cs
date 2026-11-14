@@ -1,14 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using Poison.Managers;
+using Spectr.Managers;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
-using static Poison.Menu.Main;
-using static Poison.Utilities.AssetUtilities;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.AssetUtilities;
 
-namespace Poison.Menu
+namespace Spectr.Menu
 {
     public partial class UI
     {

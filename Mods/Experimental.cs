@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Mods/Experimental.cs
+ * Spectr Menu  Mods/Experimental.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,12 +25,12 @@ using GorillaNetworking;
 using GorillaTagScripts.VirtualStumpCustomMaps;
 using Photon.Pun;
 using Photon.Realtime;
-using Poison.Classes.Menu;
-using Poison.Extensions;
-using Poison.Managers;
-using Poison.Menu;
-using Poison.Patches.Menu;
-using Poison.Utilities;
+using Spectr.Classes.Menu;
+using Spectr.Extensions;
+using Spectr.Managers;
+using Spectr.Menu;
+using Spectr.Patches.Menu;
+using Spectr.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -39,14 +39,14 @@ using System.IO;
 using System.Linq;
 using TMPro;
 using UnityEngine;
-using static Poison.Menu.Main;
-using static Poison.Utilities.RandomUtilities;
-using static Poison.Utilities.RigUtilities;
-using Console = Poison.Classes.Menu.Console;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.RandomUtilities;
+using static Spectr.Utilities.RigUtilities;
+using Console = Spectr.Classes.Menu.Console;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
-namespace Poison.Mods
+namespace Spectr.Mods
 {
     public static class Experimental
     {
@@ -123,7 +123,7 @@ namespace Poison.Mods
                 i++;
             }
             text += "\n====================================\n";
-            text += "Text file generated with Poison Menu";
+            text += "Text file generated with Spectr Menu";
             string fileName = $"{PluginInfo.BaseDirectory}/SoundData.txt";
 
             File.WriteAllText(fileName, text);
@@ -145,7 +145,7 @@ namespace Poison.Mods
                 catch { LogManager.Log("Failed to log hat"); }
             }
             text += "\n====================================\n";
-            text += "Text file generated with Poison Menu";
+            text += "Text file generated with Spectr Menu";
             string fileName = $"{PluginInfo.BaseDirectory}/CosmeticData.txt";
 
             File.WriteAllText(fileName, text);
@@ -188,7 +188,7 @@ namespace Poison.Mods
                 i++;
             }
             text += "\n====================================\n";
-            text += "Text file generated with Poison Menu";
+            text += "Text file generated with Spectr Menu";
             string fileName = $"{PluginInfo.BaseDirectory}/RPCData.txt";
 
             File.WriteAllText(fileName, text);

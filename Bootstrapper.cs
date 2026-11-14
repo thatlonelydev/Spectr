@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Bootstrapper.cs
+ * SPECTR  Bootstrapper.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,18 +18,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-using Poison.Classes.Menu;
-using Poison.Managers;
-using Poison.Menu;
-using Poison.Patches;
-using Poison.Patches.Menu;
+using Spectr.Classes.Menu;
+using Spectr.Managers;
+using Spectr.Menu;
+using Spectr.Patches;
+using Spectr.Patches.Menu;
 using System;
 using System.Collections;
 using System.IO;
 using System.Linq;
 using UnityEngine;
 
-namespace Poison
+namespace Spectr
 {
     internal static class Bootstrapper
     {
@@ -43,6 +43,7 @@ namespace Poison
         {
             if (initialized) return;
             initialized = true;
+            MigrateLegacyDirectory();
             FirstLaunch = !Directory.Exists(PluginInfo.BaseDirectory);
             string[] existingDirectories =
             {
@@ -65,31 +66,71 @@ namespace Poison
                     Directory.CreateDirectory(target);
             }
             PatchHandler.PatchAll(true);
-            if (File.Exists($"{PluginInfo.BaseDirectory}/Poison_Preferences.txt"))
+            if (File.Exists($"{PluginInfo.BaseDirectory}/Spectr_Preferences.txt"))
             {
-                if (File.ReadAllLines($"{PluginInfo.BaseDirectory}/Poison_Preferences.txt")[0]
+                if (File.ReadAllLines($"{PluginInfo.BaseDirectory}/Spectr_Preferences.txt")[0]
                     .Split(";;")
                     .Contains("Accept TOS"))
                 {
                     TOSPatches.enabled = true;
                 }
             }
-            if (File.Exists($"{PluginInfo.BaseDirectory}/Poison_DisableTelemetry.txt"))
+            if (File.Exists($"{PluginInfo.BaseDirectory}/Spectr_DisableTelemetry.txt"))
                 ServerData.DisableTelemetry = true;
             GorillaTagger.OnPlayerSpawned(LoadMenu);
             try { Classes.Menu.VanillaPropsBaseline.Load(); } catch { }
         }
+        private static void MigrateLegacyDirectory()
+        {
+            string legacyDirectory =
+#if LEGAL || LEGAL_DEBUG
+                "Poison/Legal";
+#else
+                "Poison";
+#endif
+
+            try
+            {
+                if (!Directory.Exists(PluginInfo.BaseDirectory) && Directory.Exists(legacyDirectory))
+                {
+                    string parent = Path.GetDirectoryName(PluginInfo.BaseDirectory);
+                    if (!string.IsNullOrEmpty(parent))
+                        Directory.CreateDirectory(parent);
+
+                    Directory.Move(legacyDirectory, PluginInfo.BaseDirectory);
+                }
+
+                if (!Directory.Exists(PluginInfo.BaseDirectory))
+                    return;
+
+                foreach (string legacyFile in Directory.GetFiles(
+                    PluginInfo.BaseDirectory, "Poison_*", SearchOption.AllDirectories))
+                {
+                    string directory = Path.GetDirectoryName(legacyFile) ?? PluginInfo.BaseDirectory;
+                    string newName = Path.GetFileName(legacyFile).Replace("Poison_", "Spectr_");
+                    string newPath = Path.Combine(directory, newName);
+
+                    if (!File.Exists(newPath))
+                        File.Move(legacyFile, newPath);
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.LogWarning($"[SPECTR] Legacy settings migration failed: {ex.Message}");
+            }
+        }
+
         private static void LoadMenu()
         {
             PatchHandler.PatchAll();
-            Loader = new GameObject("Poison_Loader");
+            Loader = new GameObject("Spectr_Loader");
             CoroutineManager coroutineManager = Loader.AddComponent<CoroutineManager>();
             Loader.AddComponent<NotificationManager>();
             Loader.AddComponent<CustomBoardManager>();
             Loader.AddComponent<UI>();
             Loader.AddComponent<Hud>();
-            Loader.AddComponent<Poison.Classes.Menu.Console>();
-            Loader.AddComponent<Poison.Classes.Menu.ServerData>();
+            Loader.AddComponent<Spectr.Classes.Menu.Console>();
+            Loader.AddComponent<Spectr.Classes.Menu.ServerData>();
             UnityEngine.Object.DontDestroyOnLoad(Loader);
             coroutineManager.StartCoroutine(PatchIntegrityLoop());
         }

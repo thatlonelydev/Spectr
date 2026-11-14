@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Managers/NotificationManager.cs
+ * Spectr Menu  Managers/NotificationManager.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,9 +20,9 @@
  */
 
 using GorillaLocomotion;
-using Poison.Classes.Menu;
-using Poison.Extensions;
-using Poison.Menu;
+using Spectr.Classes.Menu;
+using Spectr.Extensions;
+using Spectr.Menu;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -30,9 +30,9 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static Poison.Menu.Main;
+using static Spectr.Menu.Main;
 
-namespace Poison.Managers
+namespace Spectr.Managers
 {
     public class NotificationManager : MonoBehaviour
     {

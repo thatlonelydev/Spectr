@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Managers/PatreonManager.cs
+ * Spectr Menu  Managers/PatreonManager.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,21 +22,21 @@
 using ExitGames.Client.Photon;
 using Photon.Pun;
 using Photon.Realtime;
-using Poison.Classes.Menu;
-using Poison.Extensions;
-using Poison.Menu;
-using Poison.Mods;
-using Poison.Utilities;
+using Spectr.Classes.Menu;
+using Spectr.Extensions;
+using Spectr.Menu;
+using Spectr.Mods;
+using Spectr.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
-using static Poison.Utilities.AssetUtilities;
-using static Poison.Utilities.RigUtilities;
+using static Spectr.Utilities.AssetUtilities;
+using static Spectr.Utilities.RigUtilities;
 
-namespace Poison.Managers
+namespace Spectr.Managers
 {
     public class PatreonManager : MonoBehaviour
     {

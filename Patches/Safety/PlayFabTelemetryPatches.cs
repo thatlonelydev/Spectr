@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Patches/Safety/PlayFabTelemetryPatches.cs
+ * Spectr Menu  Patches/Safety/PlayFabTelemetryPatches.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,11 +25,11 @@ using PlayFab.ClientModels;
 using PlayFab.Internal;
 using System;
 using System.Collections.Generic;
-using static Poison.Patches.PatchHandler;
-using static Poison.Utilities.RandomUtilities;
+using static Spectr.Patches.PatchHandler;
+using static Spectr.Utilities.RandomUtilities;
 using Random = UnityEngine.Random;
 
-namespace Poison.Patches.Safety
+namespace Spectr.Patches.Safety
 {
     public class PlayFabTelemetryPatches
     {

@@ -1,6 +1,6 @@
-﻿using Poison.Managers.DiscordRPC.RPC.Payload;
+﻿using Spectr.Managers.DiscordRPC.RPC.Payload;
 
-namespace Poison.Managers.DiscordRPC.RPC.Commands
+namespace Spectr.Managers.DiscordRPC.RPC.Commands
 {
     internal class SubscribeCommand : ICommand
     {

@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Patches/Menu/CallLimiterPatch.cs
+ * Spectr Menu  Patches/Menu/CallLimiterPatch.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,9 +20,9 @@
  */
 
 using HarmonyLib;
-using Poison.Extensions;
+using Spectr.Extensions;
 
-namespace Poison.Patches.Menu
+namespace Spectr.Patches.Menu
 {
     [HarmonyPatch(typeof(CallLimiter), nameof(CallLimiter.Reset))]
     public class CallLimiterPatch

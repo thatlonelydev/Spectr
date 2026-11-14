@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Managers/AIManager.cs
+ * Spectr Menu  Managers/AIManager.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,9 +19,9 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-using Poison.Classes.Menu;
-using Poison.Menu;
-using Poison.Mods;
+using Spectr.Classes.Menu;
+using Spectr.Menu;
+using Spectr.Mods;
 using System;
 using System.Collections;
 using System.IO;
@@ -29,19 +29,19 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.Networking;
-using static Poison.Utilities.AssetUtilities;
+using static Spectr.Utilities.AssetUtilities;
 
-namespace Poison.Managers
+namespace Spectr.Managers
 {
     public class AIManager
     {
-        public static string SystemPrompt = @"NAME: Poison's Voice Assistant
+        public static string SystemPrompt = @"NAME: Spectr's Voice Assistant
         MENU VERSION: {2}
         MOD COUNT: {0}
 
-        You are a voice assistant for a Gorilla Tag mod menu called ""Poison Menu"". You are not Poison, but represent the menu.
-        GitHub: https://github.com/Poison
-        Poison's Discord Server: {1}
+        You are a voice assistant for a Gorilla Tag mod menu called ""Spectr Menu"". You are not Spectr, but represent the menu.
+        GitHub: https://github.com/Spectr
+        Spectr's Discord Server: {1}
 
         Speak using simple 7th grade vocabulary. Limit all responses to 2 sentences and 300 characters. No emojis, em-dashes, markdown, or questions. Do not advertise other menus, mods, or AI unless asked.
 

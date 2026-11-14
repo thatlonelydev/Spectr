@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Patches/Menu/FailurePatch.cs
+ * Spectr Menu  Patches/Menu/FailurePatch.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,10 +21,10 @@
 
 using GorillaNetworking;
 using HarmonyLib;
-using Poison.Classes.Menu;
-using Poison.Managers;
+using Spectr.Classes.Menu;
+using Spectr.Managers;
 
-namespace Poison.Patches.Menu
+namespace Spectr.Patches.Menu
 {
     [HarmonyPatch(typeof(GorillaComputer), nameof(GorillaComputer.GeneralFailureMessage))]
     public class FailurePatch

@@ -1,22 +1,22 @@
 <p align="center">
-  <a href="#"><img src="Resources/GitHub/icon-transparent.png" width="250"></a><a href="#"><img src="Resources/GitHub/title.png" width="500"></a>
+  <img src="Resources/GitHub/spectr-logo.svg" width="720" alt="SPECTR">
 </p>
 
 ---
 
 <p align="center">
-	<a href="https://github.com/heycanihavethis/Poison/releases"><img src="https://img.shields.io/github/v/release/heycanihavethis/Poison?label=version&style=for-the-badge"></a>
-	<a href="https://github.com/heycanihavethis/Poison/releases/latest"><img src="https://img.shields.io/github/downloads/heycanihavethis/Poison/latest/Poison.Menu.dll?style=for-the-badge"></a>
+	<a href="https://github.com/thatlonelydev/Spectr/releases"><img src="https://img.shields.io/github/v/release/thatlonelydev/Spectr?label=version&style=for-the-badge"></a>
+	<a href="https://github.com/thatlonelydev/Spectr/releases/latest"><img src="https://img.shields.io/github/downloads/thatlonelydev/Spectr/latest/Spectr.dll?style=for-the-badge"></a>
 	<a href="https://discord.gg/seralyth"><img src="https://img.shields.io/discord/1500168360787447909?label=discord&style=for-the-badge&color=blueviolet"></a>
 </p>
 
 ---
 
-# Poison Menu  
+# SPECTR  
 <sub>Forked from ii's Stupid Menu</sub>
 <sub>and Seralyth</sub>
 
-Poison Menu is a **feature-packed** mod menu for Gorilla Tag, built by the community, for the community. Whether you just want mods, are a developer, or anything inbetween, this menu has you covered. Designed to be **as useful as possible**, it includes a variety of features and options that let you customize your modding experience to your heart’s content.  
+SPECTR is a **feature-packed** mod menu for Gorilla Tag, built by the community, for the community. Whether you just want mods, are a developer, or anything inbetween, this menu has you covered. Designed to be **as useful as possible**, it includes a variety of features and options that let you customize your modding experience to your heart’s content.  
 
 <details>
   <summary><b>💡 Why open-source?</b></summary>
@@ -47,13 +47,13 @@ Let's bring back the collaboration of modding. No paywalls, no secrets, no malwa
 <details>
   <summary><b>💾 Installation</b></summary>
 	
-1. **Download** the latest release **[here](https://github.com/heycanihavethis/Poison/releases/latest)**
-2. **Drag & Drop** `Poison-Menu.dll` into your plugins folder  
+1. **Download** the latest release **[here](https://github.com/thatlonelydev/Spectr/releases/latest)**
+2. **Drag & Drop** `Spectr.dll` into your plugins folder  
 3. **Launch** Gorilla Tag and enjoy!
 
 **🧱 From Source Code (for developers!)**
 
-1. Download the source code **[here](https://github.com/heycanihavethis/Poison/releases/latest)**
+1. Download the source code **[here](https://github.com/thatlonelydev/Spectr/releases/latest)**
 2. Edit `Directory.Build.props` and update `<GamePath>` if your Gorilla Tag is in a custom spot
 3. Build the project with `Ctrl + Shift + B`<Br>
 ✅ The DLL will automatically go into your Gorilla Tag plugins folder
@@ -115,7 +115,7 @@ If you wish to support us, here are some of the ways you can!
 | Ethereum   | [![ETH](https://img.shields.io/badge/Ethereum-Donate-blue?style=for-the-badge&logo=ethereum)](ethereum:0xf91E9d3e40131409c6c081537523dE25e7C56648) | [0xf91E9d3e40131409c6c081537523dE25e7C56648](ethereum:0xf91E9d3e40131409c6c081537523dE25e7C56648) |
 | Litecoin   | [![LTC](https://img.shields.io/badge/Litecoin-Donate-lightgrey?style=for-the-badge&logo=litecoin)](litecoin:LKztFcWGnRdvDVKrqmmfFYQPfXqPQEjWod) | [LKztFcWGnRdvDVKrqmmfFYQPfXqPQEjWod](litecoin:LKztFcWGnRdvDVKrqmmfFYQPfXqPQEjWod) |
 | Bitcoin   | [![BTC](https://img.shields.io/badge/Bitcoin-Donate-orange?style=for-the-badge&logo=Bitcoin)](bitcoin:bc1qndjxuyeydvmse7dajehm6gxq3dcmlh0wtum0cv) | [bc1qndjxuyeydvmse7dajehm6gxq3dcmlh0wtum0cv](bitcoin:bc1qndjxuyeydvmse7dajehm6gxq3dcmlh0wtum0cv) |
-| Ko-fi | [![Ko-fi](https://img.shields.io/badge/Ko--fi-Poison-purple?style=for-the-badge&logo=ko-fi)](https://ko-fi.com/mullvad) | [Poison](https://ko-fi.com/mullvad) |
+
 
 </details>
 
@@ -129,11 +129,12 @@ If you wish to support us, here are some of the ways you can!
 > **Read our [Privacy Policy](https://menu.poisons.men/poison/policy?tab=privacy) (https://menu.poisons.men/poison/policy) for details on how this data is collected and used.**<br>
 > The donate, search, star and speak symbols are provided from [Icons8](https://icons8.com).
 
-> Poison Menu  README.md<br>
+> SPECTR  README.md<br>
 > A community driven mod menu for Gorilla Tag with over 1000+ mods
 >
-> Copyright (C) 2026  Poison Software
-> https://github.com/heycanihavethis/poison
+> Original upstream copyright and branding exclusions are retained in accordance with the source repository's licensing terms.
+> SPECTR rebrand and modifications by That Lonely Dev.
+> https://github.com/thatlonelydev/Spectr
 > 
 > This program is free software: you can redistribute it and/or modify
 > it under the terms of the GNU General Public License as published by
@@ -151,3 +152,5 @@ If you wish to support us, here are some of the ways you can!
 > This product is not affiliated with Another Axiom Inc. or its videogames Gorilla Tag and Orion Drift and is not endorsed or otherwise sponsored by Another Axiom. Portions of the materials contained herein are property of Another Axiom. ©2021 Another Axiom Inc.
 
 > The names "Poison", "Poison Software", "Seralyth", "Seralyth Software", logos, artwork, and branding are not covered by this license.
+<!-- SPECTR build trigger -->
+

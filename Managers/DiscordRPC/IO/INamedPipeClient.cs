@@ -1,7 +1,7 @@
-﻿using Poison.Managers.DiscordRPC.Logging;
+﻿using Spectr.Managers.DiscordRPC.Logging;
 using System;
 
-namespace Poison.Managers.DiscordRPC.IO
+namespace Spectr.Managers.DiscordRPC.IO
 {
     /// <summary>
     /// Pipe Client used to communicate with Discord.

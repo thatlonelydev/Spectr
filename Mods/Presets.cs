@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Mods/Presets.cs
+ * Spectr Menu  Mods/Presets.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,12 +19,12 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-using Poison.Managers;
+using Spectr.Managers;
 using System;
 using System.IO;
-using static Poison.Menu.Main;
+using static Spectr.Menu.Main;
 
-namespace Poison.Mods
+namespace Spectr.Mods
 {
     public static class Presets
     {
@@ -50,9 +50,9 @@ namespace Poison.Mods
             pageButtonType = 1;
             fontCycle = -1;
 
-            Poison.Menu.Buttons.GetIndex("Change Menu Theme").cycleValue(true);
-            Poison.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
-            Poison.Menu.Buttons.GetIndex("Change Font Type").cycleValue(true);
+            Spectr.Menu.Buttons.GetIndex("Change Menu Theme").cycleValue(true);
+            Spectr.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
+            Spectr.Menu.Buttons.GetIndex("Change Font Type").cycleValue(true);
 
             Settings.Panic();
 
@@ -144,9 +144,9 @@ namespace Poison.Mods
             pageButtonType = 1;
             fontCycle = 0;
 
-            Poison.Menu.Buttons.GetIndex("Change Menu Theme").cycleValue(true);
-            Poison.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
-            Poison.Menu.Buttons.GetIndex("Change Font Type").cycleValue(true);
+            Spectr.Menu.Buttons.GetIndex("Change Menu Theme").cycleValue(true);
+            Spectr.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
+            Spectr.Menu.Buttons.GetIndex("Change Font Type").cycleValue(true);
 
             Settings.Panic();
 
@@ -172,9 +172,9 @@ namespace Poison.Mods
             pageButtonType = 1;
             fontCycle = 0;
 
-            Poison.Menu.Buttons.GetIndex("Change Menu Theme").cycleValue(true);
-            Poison.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
-            Poison.Menu.Buttons.GetIndex("Change Font Type").cycleValue(true);
+            Spectr.Menu.Buttons.GetIndex("Change Menu Theme").cycleValue(true);
+            Spectr.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
+            Spectr.Menu.Buttons.GetIndex("Change Font Type").cycleValue(true);
 
             Settings.Panic();
 
@@ -194,7 +194,7 @@ namespace Poison.Mods
             };
 
             pageButtonType = 2;
-            Poison.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
+            Spectr.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
 
             foreach (string mod in presetMods)
                 Toggle(mod);

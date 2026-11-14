@@ -1,9 +1,9 @@
 ﻿/*
- * Poison Menu  Mods/Important.cs
+ * Spectr Menu  Mods/Important.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,13 +25,13 @@ using GorillaNetworking;
 using GorillaTagScripts;
 using HarmonyLib;
 using Photon.Pun;
-using Poison.Classes.Menu;
-using Poison.Extensions;
-using Poison.Managers;
-using Poison.Managers.DiscordRPC;
-using Poison.Menu;
-using Poison.Patches.Menu;
-using Poison.Utilities;
+using Spectr.Classes.Menu;
+using Spectr.Extensions;
+using Spectr.Managers;
+using Spectr.Managers.DiscordRPC;
+using Spectr.Menu;
+using Spectr.Patches.Menu;
+using Spectr.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -51,13 +51,13 @@ using UnityEngine.TextCore;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 using Valve.Newtonsoft.Json;
-using static Poison.Menu.Main;
-using static Poison.Utilities.AssetUtilities;
-using static Poison.Utilities.RandomUtilities;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.AssetUtilities;
+using static Spectr.Utilities.RandomUtilities;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 using Object = UnityEngine.Object;
 
-namespace Poison.Mods
+namespace Spectr.Mods
 {
     public static class Important
     {
@@ -330,7 +330,7 @@ namespace Poison.Mods
                 .Aggregate("", (current, line) => current + (Environment.NewLine + "echo      " + line));
 
             string restartScript = @"@echo off
-title Poison Menu - Restarting Gorilla Tag
+title Spectr Menu - Restarting Gorilla Tag
 color 5
 
 cls
@@ -409,7 +409,7 @@ exit";
                     Assets = new Managers.DiscordRPC.Assets
                     {
                         LargeImageKey = "cone",
-                        LargeImageText = "Poison Menu",
+                        LargeImageText = "Spectr Menu",
                         SmallImageKey = inRoom ? "online" : "offline",
                         SmallImageText = inRoom ? "Online" : "Offline"
                     },
@@ -427,7 +427,7 @@ exit";
                         new Button
                         {
                             Label = "Download",
-                            Url = "https://github.com/heycanihavethis/Poison/"
+                            Url = "https://github.com/heycanihavethis/Spectr/"
                         }
                     }
                 });
@@ -452,7 +452,7 @@ exit";
             {
                 Prompt("This mod requires the \"QuickSong\" library. Would you like to automatically download it? (16.3mb)", () =>
                 {
-                    using UnityWebRequest request = UnityWebRequest.Get("https://github.com/Poison/QuickSong/releases/latest/download/QuickSong.exe");
+                    using UnityWebRequest request = UnityWebRequest.Get("https://github.com/Spectr/QuickSong/releases/latest/download/QuickSong.exe");
                     UnityWebRequestAsyncOperation operation = request.SendWebRequest();
 
                     while (!operation.isDone) { }

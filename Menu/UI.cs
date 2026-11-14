@@ -1,8 +1,8 @@
 using GorillaNetworking;
 using Photon.Pun;
-using Poison.Classes.Menu;
-using Poison.Extensions;
-using Poison.Managers;
+using Spectr.Classes.Menu;
+using Spectr.Extensions;
+using Spectr.Managers;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,10 +12,10 @@ using UnityEngine;
 
 
 using UnityEngine.InputSystem;
-using static Poison.Menu.Main;
-using static Poison.Utilities.AssetUtilities;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.AssetUtilities;
 
-namespace Poison.Menu
+namespace Spectr.Menu
 {
     public partial class UI : MonoBehaviour
     {
@@ -50,12 +50,12 @@ namespace Poison.Menu
 
         private const float backgroundBaseAlpha = 1f;
         private const float panelBaseAlpha = 1f;
-        private Color background = new Color(0.055f, 0.066f, 0.09f, backgroundBaseAlpha);
-        private Color panel = new Color(0.086f, 0.1f, 0.14f, panelBaseAlpha);
-        private Color border = new Color32(43, 47, 60, 255);
-        private Color accent = new Color32(158, 139, 255, 255);
-        private Color bright = new Color32(235, 237, 245, 255);
-        private Color muted = new Color32(144, 151, 169, 255);
+        private Color background = new Color(0.018f, 0.014f, 0.032f, backgroundBaseAlpha);
+        private Color panel = new Color(0.045f, 0.032f, 0.075f, panelBaseAlpha);
+        private Color border = new Color32(66, 48, 100, 255);
+        private Color accent = new Color32(174, 112, 255, 255);
+        private Color bright = new Color32(245, 241, 255, 255);
+        private Color muted = new Color32(165, 151, 190, 255);
         private static readonly Regex tags = new Regex("<[^>]*>", RegexOptions.Compiled);
 
         internal Color BackgroundColor => background;
@@ -119,7 +119,7 @@ namespace Poison.Menu
         private readonly Dictionary<string, Texture2D> icons = new Dictionary<string, Texture2D>();
         private readonly Dictionary<ButtonInfo, float> switches = new Dictionary<ButtonInfo, float>();
         private readonly Queue<Action> actions = new Queue<Action>();
-        private readonly string hidePath = Path.Combine(PluginInfo.BaseDirectory, "Poison_HideGUI.txt");
+        private readonly string hidePath = Path.Combine(PluginInfo.BaseDirectory, "Spectr_HideGUI.txt");
 
         private GUIStyle titleStyle;
         private GUIStyle textStyle;
@@ -388,7 +388,7 @@ namespace Poison.Menu
         {
             switch (kind)
             {
-                case PanelLauncher: return "Poison";
+                case PanelLauncher: return "SPECTR";
                 case PanelCategory: return category;
                 case PanelFavorites: return "Favorites";
                 case PanelActive: return "Active";
@@ -985,7 +985,7 @@ namespace Poison.Menu
                 TintTexture(new Rect(rect.x, rect.y + 1, 22, 22), logoRecolor != null ? logoRecolor : logo,
                     logoRecolor != null ? Color.white : Color.Lerp(bright, accent, 0.6f));
             }
-            Label(new Rect(rect.x + 30, rect.y - 1, 120, 20), "Poison", titleStyle, bright);
+            Label(new Rect(rect.x + 30, rect.y - 1, 120, 20), "SPECTR", titleStyle, bright);
             Label(new Rect(rect.x + 30, rect.y + 16, 120, 14), "v" + PluginInfo.Version, smallStyle, muted);
         }
 
@@ -1356,7 +1356,7 @@ namespace Poison.Menu
             Box(new Rect(sx - 260, sy - 165, 1080, 700), new Color(0, 0, 0, 0.6f), 0);
             Box(new Rect(sx, sy, 560, 365), border, 8);
             Box(new Rect(sx + 1, sy + 1, 558, 363), panel, 7);
-            Label(new Rect(sx + 26, sy + 22, 490, 28), "Poison", titleStyle);
+            Label(new Rect(sx + 26, sy + 22, 490, 28), "SPECTR", titleStyle);
             string message = Plain(prompt.Message);
             float height = wrapStyle.CalcHeight(new GUIContent(message), 484);
             BeginScroll(new Rect(sx + 26, sy + 74, 508, 155), promptScroll, height);
@@ -1597,7 +1597,7 @@ namespace Poison.Menu
             status = text;
             statusUntil = Time.unscaledTime + 5;
             motions.Remove("status");
-            NotificationManager.SendNotification("<color=grey>[</color><color=#" + ColorUtility.ToHtmlStringRGB(accent) + ">Poison</color><color=grey>]</color> " + text);
+            NotificationManager.SendNotification("<color=grey>[</color><color=#" + ColorUtility.ToHtmlStringRGB(accent) + ">SPECTR</color><color=grey>]</color> " + text);
         }
 
         public void DebugPrint(string text)

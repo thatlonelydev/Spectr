@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Menu/Main.cs
+ * SPECTR  Menu/Main.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,14 +27,14 @@ using GorillaTagScripts;
 using HarmonyLib;
 using Photon.Pun;
 using Photon.Realtime;
-using Poison.Classes.Menu;
-using Poison.Classes.Mods;
-using Poison.Extensions;
-using Poison.Managers;
-using Poison.Mods;
-using Poison.Patches;
-using Poison.Patches.Menu;
-using Poison.Utilities;
+using Spectr.Classes.Menu;
+using Spectr.Classes.Mods;
+using Spectr.Extensions;
+using Spectr.Managers;
+using Spectr.Mods;
+using Spectr.Patches;
+using Spectr.Patches.Menu;
+using Spectr.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -57,17 +57,17 @@ using UnityEngine.XR;
 using Valve.Newtonsoft.Json;
 using Valve.VR;
 using WebSocketSharp;
-using static Poison.Utilities.AssetUtilities;
-using static Poison.Utilities.FileUtilities;
-using static Poison.Utilities.RandomUtilities;
-using ButtonCollider = Poison.Classes.Menu.ButtonCollider;
+using static Spectr.Utilities.AssetUtilities;
+using static Spectr.Utilities.FileUtilities;
+using static Spectr.Utilities.RandomUtilities;
+using ButtonCollider = Spectr.Classes.Menu.ButtonCollider;
 using CommonUsages = UnityEngine.XR.CommonUsages;
-using Console = Poison.Classes.Menu.Console;
+using Console = Spectr.Classes.Menu.Console;
 using JoinType = GorillaNetworking.JoinType;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
-namespace Poison.Menu
+namespace Spectr.Menu
 {
     [HarmonyPatch(typeof(GTPlayer), nameof(GTPlayer.LateUpdate))]
     public class Main : MonoBehaviour
@@ -92,11 +92,11 @@ namespace Poison.Menu
             //if (Plugin.FirstLaunch)
             //    Prompt("It seems like this is your first time using the menu. Would you like to watch a quick tutorial to get to know how to use it?", Settings.ShowTutorial);
             //else
-            //    acceptedDonations = File.Exists($"{PluginInfo.BaseDirectory}/Poison_HideDonationButton.txt");
+            //    acceptedDonations = File.Exists($"{PluginInfo.BaseDirectory}/Spectr_HideDonationButton.txt");
             if (!Bootstrapper.FirstLaunch)
-                acceptedDonations = File.Exists($"{PluginInfo.BaseDirectory}/Poison_HideDonationButton.txt");
+                acceptedDonations = File.Exists($"{PluginInfo.BaseDirectory}/Spectr_HideDonationButton.txt");
 
-            string adminPromptShownPath = $"{PluginInfo.BaseDirectory}/Poison_AdminPromptShown.txt";
+            string adminPromptShownPath = $"{PluginInfo.BaseDirectory}/Spectr_AdminPromptShown.txt";
             if (!File.Exists(adminPromptShownPath))
             {
                 Prompt("This is your first time using the menu.\n\nDo you want to disable admins being able to do stuff to you, or keep it on?", () => Toggle("Block Admin Actions"), null, "Block Admins", "Keep It On");
@@ -556,7 +556,7 @@ namespace Poison.Menu
 
                 if (animatedTitle && title != null)
                 {
-                    string targetString = doCustomName ? NoRichtextTags(customMenuName) : "Poison Menu";
+                    string targetString = doCustomName ? NoRichtextTags(customMenuName) : "SPECTR";
                     int length = (int)Mathf.PingPong(Time.time / 0.25f, targetString.Length + 1);
                     title.text = length > 0 ? targetString[..length] : "";
                 }
@@ -1893,7 +1893,7 @@ namespace Poison.Menu
             {
                 if (buttonSpriteSheet != null) return buttonSpriteSheet;
                 buttonSpriteSheet = ScriptableObject.CreateInstance<TMP_SpriteAsset>();
-                buttonSpriteSheet.name = "Poison_SpriteSheet";
+                buttonSpriteSheet.name = "Spectr_SpriteSheet";
 
                 var textureList = new List<Texture2D>();
                 var spriteDataList = new List<(string name, int index)>();
@@ -2408,7 +2408,7 @@ namespace Poison.Menu
                     case 61:
                         if (videoPlayer == null)
                         {
-                            videoPlayer = new GameObject("Poison_VideoPlayer").AddComponent<VideoPlayer>();
+                            videoPlayer = new GameObject("Spectr_VideoPlayer").AddComponent<VideoPlayer>();
                             videoPlayer.playOnAwake = true;
                             videoPlayer.isLooping = true;
                             videoPlayer.url = $"{PluginInfo.ServerResourcePath}/Videos/Themes/badapple.mp4";
@@ -2468,7 +2468,7 @@ namespace Poison.Menu
                     }
                 }.AddComponent<TextMeshPro>();
                 title.font = activeFont;
-                title.text = translate ? "Poison" : "<b>Poison</b>";
+                title.text = translate ? "SPECTR" : "<b>SPECTR</b>";
 
                 if (doCustomName)
                     title.text = customMenuName;
@@ -2511,7 +2511,7 @@ namespace Poison.Menu
 
                 if (animatedTitle)
                 {
-                    string targetString = doCustomName ? NoRichtextTags(customMenuName) : "Poison Menu";
+                    string targetString = doCustomName ? NoRichtextTags(customMenuName) : "SPECTR";
                     int length = (int)Mathf.PingPong(Time.time / 0.25f, targetString.Length);
                     title.text = length > 0 ? targetString[..length] : "";
                 }
@@ -3506,7 +3506,7 @@ namespace Poison.Menu
                     case "webm":
                     case "mov":
                         {
-                            promptVideoPlayer = new GameObject("Poison_PromptVideoPlayer").AddComponent<VideoPlayer>();
+                            promptVideoPlayer = new GameObject("Spectr_PromptVideoPlayer").AddComponent<VideoPlayer>();
                             promptVideoPlayer.playOnAwake = true;
                             promptVideoPlayer.isLooping = true;
                             promptVideoPlayer.url = promptImageUrl;
@@ -4329,7 +4329,7 @@ namespace Poison.Menu
             if (disableGunLine) return (Ray, GunPointer);
             if (GunLine == null)
             {
-                GameObject line = new GameObject("Poison_GunLine");
+                GameObject line = new GameObject("Spectr_GunLine");
                 GunLine = line.AddComponent<LineRenderer>();
             }
 
@@ -6861,9 +6861,9 @@ jgs \_   _/ |Oo\
         public static string customMenuName = "Your Text Here";
         public static readonly string menuName =
 #if LEGAL
-            "<b>Poison</b> Legal";
+            "<b>SPECTR</b> Legal";
 #else
-            "<b>Poison</b> Menu";
+            "<b>SPECTR</b>";
 #endif
         public static bool doCustomMenuBackground;
         public static bool menuTrail;

@@ -1,6 +1,6 @@
 ﻿using Valve.Newtonsoft.Json;
 
-namespace Poison.Managers.DiscordRPC.Message
+namespace Spectr.Managers.DiscordRPC.Message
 {
     /// <summary>
     /// Called when some other person has requested access to this game. C -> D -> C.

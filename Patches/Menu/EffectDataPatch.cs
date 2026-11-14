@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Patches/Menu/EffectDataPatch.cs
+ * Spectr Menu  Patches/Menu/EffectDataPatch.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,10 +22,10 @@
 using GorillaLocomotion;
 using HarmonyLib;
 using Photon.Pun;
-using Poison.Menu;
+using Spectr.Menu;
 using UnityEngine;
 
-namespace Poison.Patches.Menu
+namespace Spectr.Patches.Menu
 {
     [HarmonyPatch(typeof(VRRig), nameof(VRRig.SetHandEffectData))]
     public class EffectDataPatch

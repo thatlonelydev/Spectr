@@ -1,9 +1,9 @@
 ﻿/*
- * Poison Menu  Mods/Visuals.cs
+ * Spectr Menu  Mods/Visuals.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,13 +28,13 @@ using GorillaTag.Rendering;
 using GorillaTagScripts;
 using HarmonyLib;
 using Photon.Pun;
-using Poison.Classes.Menu;
-using Poison.Classes.Mods;
-using Poison.Extensions;
-using Poison.Managers;
-using Poison.Menu;
-using Poison.Patches.Menu;
-using Poison.Utilities;
+using Spectr.Classes.Menu;
+using Spectr.Classes.Mods;
+using Spectr.Extensions;
+using Spectr.Managers;
+using Spectr.Menu;
+using Spectr.Patches.Menu;
+using Spectr.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -47,13 +47,13 @@ using UnityEngine.Rendering;
 using UnityEngine.TextCore;
 using UnityEngine.UI;
 using WebSocketSharp;
-using static Poison.Menu.Main;
-using static Poison.Utilities.AssetUtilities;
-using static Poison.Utilities.GameModeUtilities;
-using static Poison.Utilities.RigUtilities;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.AssetUtilities;
+using static Spectr.Utilities.GameModeUtilities;
+using static Spectr.Utilities.RigUtilities;
 using Object = UnityEngine.Object;
 
-namespace Poison.Mods
+namespace Spectr.Mods
 {
     public class Visuals
     {
@@ -99,7 +99,7 @@ namespace Poison.Mods
             title.text = "DEBUG INFO";
             body.richText = true;
             string text = "";
-            text += $"<color=blue><b>Poison</b></color> {PluginInfo.Version}  <color=grey>|</color>  Users Online:  {ServerData.onlineUsers}" + "\\n \\n";
+            text += $"<color=blue><b>Spectr</b></color> {PluginInfo.Version}  <color=grey>|</color>  Users Online:  {ServerData.onlineUsers}" + "\\n \\n";
             string red = "<color=red>" + MathF.Floor(PlayerPrefs.GetFloat("redValue") * 255f) + "</color>";
             string green = ", <color=green>" + MathF.Floor(PlayerPrefs.GetFloat("greenValue") * 255f) + "</color>";
             string blue = ", <color=blue>" + MathF.Floor(PlayerPrefs.GetFloat("blueValue") * 255f) + "</color>";
@@ -549,7 +549,7 @@ namespace Poison.Mods
                 string watchText = "";
 
                 if (infoWatchMenuName || defaultWatch)
-                    watchText = (doCustomName ? NoRichtextTags(customMenuName) : "Poison Menu") + "\n<color=grey>";
+                    watchText = (doCustomName ? NoRichtextTags(customMenuName) : "Spectr Menu") + "\n<color=grey>";
                 else if (!infoWatchMenuName && !defaultWatch)
                     watchText = "<color=grey>";
 
@@ -2552,10 +2552,10 @@ namespace Poison.Mods
                                 }
                             }
 
-                            if (Poison.Classes.Menu.VanillaPropsBaseline.IsLoaded)
+                            if (Spectr.Classes.Menu.VanillaPropsBaseline.IsLoaded)
                             {
                                 var rigProps = vrrig.GetPhotonPlayer().CustomProperties;
-                                var unknownKeys = Poison.Classes.Menu.VanillaPropsBaseline.FindUnknownKeys(rigProps);
+                                var unknownKeys = Spectr.Classes.Menu.VanillaPropsBaseline.FindUnknownKeys(rigProps);
                                 foreach (string unknownKey in unknownKeys)
                                 {
                                     string flag = $"Unknown:{unknownKey}";

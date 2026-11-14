@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Patches/Menu/SetColorPatch.cs
+ * Spectr Menu  Patches/Menu/SetColorPatch.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,10 +20,10 @@
  */
 
 using HarmonyLib;
-using Poison.Menu;
-using Poison.Utilities;
+using Spectr.Menu;
+using Spectr.Utilities;
 
-namespace Poison.Patches.Menu
+namespace Spectr.Patches.Menu
 {
     [HarmonyPatch(typeof(VRRig), nameof(VRRig.InitializeNoobMaterial))]
     public class InitializeNoobMaterial

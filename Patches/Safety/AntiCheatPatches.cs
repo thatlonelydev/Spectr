@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Patches/Safety/AntiCheatPatches.cs
+ * Spectr Menu  Patches/Safety/AntiCheatPatches.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,11 +21,11 @@
 
 using HarmonyLib;
 using Photon.Pun;
-using Poison.Managers;
+using Spectr.Managers;
 using UnityEngine;
-using static Poison.Patches.PatchHandler;
+using static Spectr.Patches.PatchHandler;
 
-namespace Poison.Patches.Safety
+namespace Spectr.Patches.Safety
 {
     public class AntiCheatPatches
     {

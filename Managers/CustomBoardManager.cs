@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Managers/CustomBoardManager.cs
+ * Spectr Menu  Managers/CustomBoardManager.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,16 +20,16 @@
  */
 
 using GorillaNetworking;
-using Poison.Extensions;
+using Spectr.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static Poison.Menu.Main;
+using static Spectr.Menu.Main;
 
-namespace Poison.Managers
+namespace Spectr.Managers
 {
     public class CustomBoardManager : MonoBehaviour
     {
@@ -174,10 +174,10 @@ namespace Poison.Managers
 
         public static bool motdTextDirty = true;
         public static string MenuStatusText = "Loading...";
-        public static string motdTemplate = "You are using build {0}. This menu was created by Poison Software. " +
+        public static string motdTemplate = "You are using build {0}. This menu was created by Spectr Software. " +
         "This menu is completely free and open sourced, if you paid for this menu you have been scammed. " +
         "There are a total of <b>{1}</b> mods on this menu. " +
-        "<color=red>Poison is not responsible for any bans using this menu.</color> " +
+        "<color=red>Spectr is not responsible for any bans using this menu.</color> " +
         "If you get banned while using this, it's your responsibility.\n\nCurrent menu status: <b>{4}</b>\nMade with <3 by the community.\n\n<alpha=128>{2} {0} {3}<alpha=255>";
 
         public Material forestMaterial;
