@@ -1,9 +1,9 @@
 ﻿/*
- * Poison Menu  Extensions/VRRigExtensions.cs
+ * Spectr Menu  Extensions/VRRigExtensions.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,17 +22,17 @@
 using GorillaGameModes;
 using GorillaTagScripts;
 using Photon.Pun;
-using Poison.Menu;
-using Poison.Mods;
-using Poison.Utilities;
+using Spectr.Menu;
+using Spectr.Mods;
+using Spectr.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static Poison.Menu.Main;
-using static Poison.Utilities.GameModeUtilities;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.GameModeUtilities;
 
-namespace Poison.Extensions
+namespace Spectr.Extensions
 {
     public static class VRRigExtensions
     {
