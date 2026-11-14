@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Poison.Managers.DiscordRPC.Message
+namespace Spectr.Managers.DiscordRPC.Message
 {
     /// <summary>
     /// Messages received from discord.
