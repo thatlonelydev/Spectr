@@ -43,6 +43,7 @@ namespace Spectr
         {
             if (initialized) return;
             initialized = true;
+            MigrateLegacyDirectory();
             FirstLaunch = !Directory.Exists(PluginInfo.BaseDirectory);
             string[] existingDirectories =
             {
@@ -79,6 +80,46 @@ namespace Spectr
             GorillaTagger.OnPlayerSpawned(LoadMenu);
             try { Classes.Menu.VanillaPropsBaseline.Load(); } catch { }
         }
+        private static void MigrateLegacyDirectory()
+        {
+            string legacyDirectory =
+#if LEGAL || LEGAL_DEBUG
+                "Poison/Legal";
+#else
+                "Poison";
+#endif
+
+            try
+            {
+                if (!Directory.Exists(PluginInfo.BaseDirectory) && Directory.Exists(legacyDirectory))
+                {
+                    string parent = Path.GetDirectoryName(PluginInfo.BaseDirectory);
+                    if (!string.IsNullOrEmpty(parent))
+                        Directory.CreateDirectory(parent);
+
+                    Directory.Move(legacyDirectory, PluginInfo.BaseDirectory);
+                }
+
+                if (!Directory.Exists(PluginInfo.BaseDirectory))
+                    return;
+
+                foreach (string legacyFile in Directory.GetFiles(
+                    PluginInfo.BaseDirectory, "Poison_*", SearchOption.AllDirectories))
+                {
+                    string directory = Path.GetDirectoryName(legacyFile) ?? PluginInfo.BaseDirectory;
+                    string newName = Path.GetFileName(legacyFile).Replace("Poison_", "Spectr_");
+                    string newPath = Path.Combine(directory, newName);
+
+                    if (!File.Exists(newPath))
+                        File.Move(legacyFile, newPath);
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.LogWarning($"[SPECTR] Legacy settings migration failed: {ex.Message}");
+            }
+        }
+
         private static void LoadMenu()
         {
             PatchHandler.PatchAll();
