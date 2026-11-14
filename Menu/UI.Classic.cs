@@ -220,7 +220,7 @@ namespace Poison.Menu
             const float left = ContentLeft;
             Fill(new Rect(0, 0, width, height), Color.black, 2);
             Fill(new Rect(0, 0, rail, height), cardColor, 2);
-            FitLabel(new Rect(8, 14, rail - 16, 26), "Poison", headingStyle, textColor);
+            FitLabel(new Rect(8, 14, rail - 16, 26), "SPECTR", headingStyle, textColor);
             FitLabel(new Rect(8, 40, rail - 16, 22), "v" + PluginInfo.Version, versionStyle, textColor);
 
             bool enabled = GUI.enabled;
