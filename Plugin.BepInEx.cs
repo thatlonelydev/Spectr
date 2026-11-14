@@ -1,5 +1,5 @@
 /*
- * Poison Menu  Plugin.BepInEx.cs
+ * SPECTR  Plugin.BepInEx.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
  * Copyright (C) 2026  Poison Software
