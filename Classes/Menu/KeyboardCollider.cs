@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Classes/Menu/KeyboardCollider.cs
+ * Spectr Menu  Classes/Menu/KeyboardCollider.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,9 +21,9 @@
 
 using System.Collections.Generic;
 using UnityEngine;
-using static Poison.Menu.Main;
+using static Spectr.Menu.Main;
 
-namespace Poison.Classes.Menu
+namespace Spectr.Classes.Menu
 {
     public class KeyboardKey : MonoBehaviour
     {
@@ -37,7 +37,7 @@ namespace Poison.Classes.Menu
         public void OnTriggerEnter(Collider collider)
         {
             if ((collider != lKeyCollider && collider != rKeyCollider) || menu == null || !(Time.time > delay)) return;
-            if (!Poison.Menu.Buttons.GetIndex("Disable Keyboard Delay").enabled)
+            if (!Spectr.Menu.Buttons.GetIndex("Disable Keyboard Delay").enabled)
                 delay = Time.time + 0.1f;
 
             if (doButtonsVibrate)
