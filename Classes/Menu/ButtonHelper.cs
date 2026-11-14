@@ -1,5 +1,5 @@
 ﻿/*
- * Poison Menu  Classes/Menu/CycleSetting.cs
+ * Spectr Menu  Classes/Menu/CycleSetting.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
  * Copyright (C) 2026  Poison Software
@@ -22,7 +22,7 @@
 using System;
 using UnityEngine;
 
-namespace Poison.Classes.Menu
+namespace Spectr.Classes.Menu
 {
     public static class ButtonHelper // Hell
     {
