@@ -2511,7 +2511,7 @@ namespace Poison.Menu
 
                 if (animatedTitle)
                 {
-                    string targetString = doCustomName ? NoRichtextTags(customMenuName) : "Poison Menu";
+                    string targetString = doCustomName ? NoRichtextTags(customMenuName) : "SPECTR";
                     int length = (int)Mathf.PingPong(Time.time / 0.25f, targetString.Length);
                     title.text = length > 0 ? targetString[..length] : "";
                 }
