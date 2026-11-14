@@ -985,7 +985,7 @@ namespace Poison.Menu
                 TintTexture(new Rect(rect.x, rect.y + 1, 22, 22), logoRecolor != null ? logoRecolor : logo,
                     logoRecolor != null ? Color.white : Color.Lerp(bright, accent, 0.6f));
             }
-            Label(new Rect(rect.x + 30, rect.y - 1, 120, 20), "Poison", titleStyle, bright);
+            Label(new Rect(rect.x + 30, rect.y - 1, 120, 20), "SPECTR", titleStyle, bright);
             Label(new Rect(rect.x + 30, rect.y + 16, 120, 14), "v" + PluginInfo.Version, smallStyle, muted);
         }
 
