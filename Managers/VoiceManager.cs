@@ -1,9 +1,9 @@
 ﻿/*
- * Poison Menu  Managers/VoiceManager.cs
+ * Spectr Menu  Managers/VoiceManager.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,12 +23,12 @@
 // For anyone else snooping in this class hoping to use it, you need to make sure that your recorder source type is a Factory and that the Factory is a new instance of this class.
 // You may use VoiceManager.Get()
 using Photon.Voice;
-using Poison.Mods;
+using Spectr.Mods;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Poison.Managers
+namespace Spectr.Managers
 {
     public class VoiceManager : IAudioReader<float>
     {
