@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Patches/Menu/RopePatch.cs
+ * Spectr Menu  Patches/Menu/RopePatch.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@ using HarmonyLib;
 using UnityEngine;
 using UnityEngine.XR;
 
-namespace Poison.Patches.Menu
+namespace Spectr.Patches.Menu
 {
     [HarmonyPatch(typeof(GorillaRopeSwing), nameof(GorillaRopeSwing.AttachLocalPlayer))]
     public class RopePatch
