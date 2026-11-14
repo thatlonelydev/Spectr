@@ -2,8 +2,8 @@
  * SPECTR  PluginInfo.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Spectr Software
- * https://github.com/heycanihavethis/Spectr
+ * Copyright (C) 2026  Poison Software
+ * https://github.com/heycanihavethis/Poison
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -36,7 +36,7 @@ namespace Spectr
             "Spectr";
 #endif
         public const string ClientResourcePath = "Spectr.Resources.Client";
-        public const string ServerResourcePath = "https://raw.githubusercontent.com/heycanihavethis/Spectr/master/Resources/Server";
+        public const string ServerResourcePath = "https://raw.githubusercontent.com/heycanihavethis/Poison/master/Resources/Server";
         public const string ServerAPI = "https://menu.shibagt.com";
         public const string Logo = @"um";
 
