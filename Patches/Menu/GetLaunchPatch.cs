@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Patches/Menu/GetLaunchPatch.cs
+ * Spectr Menu  Patches/Menu/GetLaunchPatch.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,14 +20,14 @@
  */
 
 using HarmonyLib;
-using Poison.Extensions;
+using Spectr.Extensions;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static Poison.Menu.Main;
-using static Poison.Utilities.GameModeUtilities;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.GameModeUtilities;
 
-namespace Poison.Patches.Menu
+namespace Spectr.Patches.Menu
 {
     [HarmonyPatch(typeof(Slingshot), nameof(Slingshot.GetLaunchVelocity))]
     public class GetLaunchPatch
