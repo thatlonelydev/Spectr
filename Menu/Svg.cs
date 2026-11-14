@@ -6,7 +6,7 @@ using System.Xml;
 using System.Xml.Linq;
 using UnityEngine;
 
-namespace Poison.Menu
+namespace Spectr.Menu
 {
     public static class Svg
     {
