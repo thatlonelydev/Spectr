@@ -1,9 +1,9 @@
 /*
- * Poison Menu  Mods/Sound.cs
+ * Spectr Menu  Mods/Sound.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,22 +24,22 @@ using GorillaLocomotion;
 using Photon.Pun;
 using Photon.Realtime;
 using Photon.Voice.Unity;
-using Poison.Classes.Menu;
-using Poison.Extensions;
-using Poison.Managers;
-using Poison.Menu;
-using Poison.Patches.Menu;
+using Spectr.Classes.Menu;
+using Spectr.Extensions;
+using Spectr.Managers;
+using Spectr.Menu;
+using Spectr.Patches.Menu;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using UnityEngine;
-using static Poison.Menu.Main;
-using static Poison.Utilities.AssetUtilities;
-using static Poison.Utilities.FileUtilities;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.AssetUtilities;
+using static Spectr.Utilities.FileUtilities;
 using Random = UnityEngine.Random;
 
-namespace Poison.Mods
+namespace Spectr.Mods
 {
     public static class Sound
     {
