@@ -2,8 +2,8 @@
  * SPECTR  Menu/Buttons.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Poison Software
- * https://github.com/heycanihavethis/Poison
+ * Copyright (C) 2026  Spectr Software
+ * https://github.com/heycanihavethis/Spectr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,13 +24,13 @@ using GorillaNetworking;
 using GorillaTagScripts;
 using GorillaTagScripts.ObstacleCourse;
 using Photon.Pun;
-using Poison.Classes.Menu;
-using Poison.Extensions;
-using Poison.Managers;
-using Poison.Mods;
-using Poison.Patches.Menu;
-using Poison.Patches.Safety;
-using Poison.Utilities;
+using Spectr.Classes.Menu;
+using Spectr.Extensions;
+using Spectr.Managers;
+using Spectr.Mods;
+using Spectr.Patches.Menu;
+using Spectr.Patches.Safety;
+using Spectr.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -38,13 +38,13 @@ using System.IO;
 using System.Linq;
 using TMPro;
 using UnityEngine;
-using static Poison.Menu.Main;
-using static Poison.Utilities.RandomUtilities;
-using static Poison.Utilities.RigUtilities;
-using Console = Poison.Classes.Menu.Console;
+using static Spectr.Menu.Main;
+using static Spectr.Utilities.RandomUtilities;
+using static Spectr.Utilities.RigUtilities;
+using Console = Spectr.Classes.Menu.Console;
 using Random = UnityEngine.Random;
 
-namespace Poison.Menu
+namespace Spectr.Menu
 {
     public static class Buttons
     {
@@ -265,7 +265,7 @@ namespace Poison.Menu
                 new ButtonInfo { buttonText = "Conduct Notifications", enableMethod =() => { GetObject("Environment Objects/LocalObjects_Prefab/TreeRoom/CodeOfConductHeadingText").GetComponent<TextMeshPro>().text = "SPECTR"; GetObject("Environment Objects/LocalObjects_Prefab/TreeRoom/COCBodyText_TitleData").GetComponent<TextMeshPro>().richText = true; }, method =() => GetObject("Environment Objects/LocalObjects_Prefab/TreeRoom/COCBodyText_TitleData").GetComponent<TextMeshPro>().text = NotificationManager.notificationText.text, toolTip = "Shows notifications on the code of conduct instead.", legal = true},
                 new ButtonInfo { buttonText = "Disable Notification Rich Text", enableMethod =() => NotificationManager.noRichText = true, disableMethod =() => NotificationManager.noRichText = false, toolTip = "Removes rich text from notifications.", legal = true},
 
-                new ButtonInfo { buttonText = "Disable RPC Protection", enableMethod =() => Poison.Patches.Safety.RPCProtection.OpRaiseEventPatch.enabled = false, disableMethod =() => Poison.Patches.Safety.RPCProtection.OpRaiseEventPatch.enabled = true, toolTip = "Disables the client-side protection limiting you to sending 500 RPCs a second.", legal = true},
+                new ButtonInfo { buttonText = "Disable RPC Protection", enableMethod =() => Spectr.Patches.Safety.RPCProtection.OpRaiseEventPatch.enabled = false, disableMethod =() => Spectr.Patches.Safety.RPCProtection.OpRaiseEventPatch.enabled = true, toolTip = "Disables the client-side protection limiting you to sending 500 RPCs a second.", legal = true},
                 new ButtonInfo { buttonText = "Disable Notifications", enableMethod =() => disableNotifications = true, disableMethod =() => disableNotifications = false, toolTip = "Disables all notifications.", legal = true},
                 new ButtonInfo { buttonText = "Disable Master Client Notifications", enableMethod =() => disableMasterClientNotifications = true, disableMethod =() => disableMasterClientNotifications = false, toolTip = "Disables all notifications regarding master client.", legal = true},
                 new ButtonInfo { buttonText = "Disable Room Notifications", enableMethod =() => disableRoomNotifications = true, disableMethod =() => disableRoomNotifications = false, toolTip = "Disables all notifications regarding the room.", legal = true},
@@ -976,7 +976,7 @@ namespace Poison.Menu
                 new ButtonInfo { buttonText = "Turn Name Tags", method = Visuals.TurnTags, disableMethod = Visuals.DisableTurnTags, toolTip = "Gives players name tags above their heads that show their turn settings."},
                 new ButtonInfo { buttonText = "Tagged Name Tags", method = Visuals.TaggedTags, disableMethod = Visuals.DisableTaggedTags, toolTip = "Gives players name tags above their heads that show who tagged them."},
                 new ButtonInfo { buttonText = "Mod Name Tags", method = Visuals.ModTags, disableMethod = Visuals.DisableModTags, toolTip = "Gives players name tags above their heads that show what mods they have."},
-                new ButtonInfo { buttonText = "Capture Vanilla Props", method = () => { if (Poison.Classes.Menu.VanillaPropsBaseline.Capture()) Poison.Managers.NotificationManager.SendNotification("<color=grey>[</color><color=green>SUCCESS</color><color=grey>]</color> Captured vanilla custom properties baseline. Mod Name Tags will now flag unknown props."); else Poison.Managers.NotificationManager.SendNotification("<color=grey>[</color><color=red>ERROR</color><color=grey>]</color> Failed to capture vanilla props. Join a room first and ensure no spoofers are active."); }, toolTip = "Captures the current Photon player custom properties as the vanilla baseline. Run this once on a clean session (no mods/spoofers active) so Mod Name Tags can flag any non-vanilla props on other players."},
+                new ButtonInfo { buttonText = "Capture Vanilla Props", method = () => { if (Spectr.Classes.Menu.VanillaPropsBaseline.Capture()) Spectr.Managers.NotificationManager.SendNotification("<color=grey>[</color><color=green>SUCCESS</color><color=grey>]</color> Captured vanilla custom properties baseline. Mod Name Tags will now flag unknown props."); else Spectr.Managers.NotificationManager.SendNotification("<color=grey>[</color><color=red>ERROR</color><color=grey>]</color> Failed to capture vanilla props. Join a room first and ensure no spoofers are active."); }, toolTip = "Captures the current Photon player custom properties as the vanilla baseline. Run this once on a clean session (no mods/spoofers active) so Mod Name Tags can flag any non-vanilla props on other players."},
                 new ButtonInfo { buttonText = "Cosmetic Name Tags", method = Visuals.CosmeticTags, disableMethod = Visuals.DisableCosmeticTags, toolTip = "Gives players name tags above their heads that show what special cosmetics they have."},
                 new ButtonInfo { buttonText = "Verified Name Tags", method = Visuals.VerifiedTags, disableMethod = Visuals.DisableVerifiedTags, toolTip = "Gives players name tags above their heads if they are a verified player."},
                 new ButtonInfo { buttonText = "Lag Name Tags", method = Visuals.CrashedTags, disableMethod = Visuals.DisableCrashedTags, toolTip = "Gives players name tags above their heads if they are lagging."},
@@ -2439,7 +2439,7 @@ namespace Poison.Menu
                 new ButtonInfo { buttonText = "Search", method = Settings.Search, isTogglable = false, toolTip = "Lets you search for specific mods.", legal = true},
                 new ButtonInfo { buttonText = "Global Return", method = Settings.GlobalReturn, isTogglable = false, toolTip = "Returns you to the previous category.", legal = true},
                 new ButtonInfo { buttonText = "Info Screen", method = Settings.Debug, enableMethod = Settings.ShowDebug, disableMethod = Settings.HideDebug, toolTip = "Shows game and modding related information.", legal = true},
-                new ButtonInfo { buttonText = "Donate Button", method =() => { NotificationManager.ClearAllNotifications(); acceptedDonations = true; File.WriteAllText($"{PluginInfo.BaseDirectory}/Poison_HideDonationButton.txt", "true"); Prompt($"If you like this menu and would like to support, you should join our Patreon! ", () => Process.Start("https://patreon.com/Poison")); }, isTogglable = false, toolTip = "An advertisement for the project's Patreon.", legal = true},
+                new ButtonInfo { buttonText = "Donate Button", method =() => { NotificationManager.ClearAllNotifications(); acceptedDonations = true; File.WriteAllText($"{PluginInfo.BaseDirectory}/Poison_HideDonationButton.txt", "true"); Prompt($"If you like this menu and would like to support, you should join our Patreon! ", () => Process.Start("https://patreon.com/Spectr")); }, isTogglable = false, toolTip = "An advertisement for the project's Patreon.", legal = true},
                 new ButtonInfo { buttonText = "Update Button", method =() => UpdatePrompt(), isTogglable = false, toolTip = "Prompts you to update the menu.", legal = true },
 
                 new ButtonInfo { buttonText = "Accept Prompt", method =() => { NotificationManager.ClearAllNotifications(); if (inTextInput) Settings.DestroyKeyboard(); CurrentPrompt.AcceptAction?.Invoke(); Settings.StopCurrentPrompt(); }, isTogglable = false, legal = true},
