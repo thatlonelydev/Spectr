@@ -8,7 +8,7 @@ chcp 65001 >nul
 
 
 cls
-title Poison Menu Installer // [#---------] Getting directory
+title SPECTR Installer // [#---------] Getting directory
 color 0e
 
 
@@ -51,7 +51,7 @@ if not defined gamePath (
 
 color 0e
 cls
-title Poison Menu Installer // [###-------] Downloading BepInEx
+title SPECTR Installer // [###-------] Downloading BepInEx
 curl -L "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.4/BepInEx_win_x64_5.4.23.4.zip" -o BPNX54234.zip
 if errorlevel 1 (
     color 0c
@@ -63,7 +63,7 @@ if errorlevel 1 (
 
 
 cls
-title Poison Menu Installer // [####------] Extracting BepInEx
+title SPECTR Installer // [####------] Extracting BepInEx
 powershell -command "Expand-Archive -Path 'BPNX54234.zip' -DestinationPath '%gamePath%' -Force"
 if errorlevel 1 (
     color 0c
@@ -75,31 +75,31 @@ if errorlevel 1 (
 
 
 cls
-title Poison Menu Installer // [#####-----] Creating directories
+title SPECTR Installer // [#####-----] Creating directories
 mkdir "%gamePath%/BepInEx/config" 2>nul
 mkdir "%gamePath%/BepInEx/plugins" 2>nul
 
 
 cls
-title Poison Menu Installer // [######----] Downloading Poison
-for /f "tokens=*" %%i in ('powershell -Command "(Invoke-RestMethod -Uri 'https://api.github.com/repos/heycanihavethis/poison/releases/latest').assets | Where-Object { $_.name -eq 'Poison.Menu.dll' } | Select-Object -ExpandProperty browser_download_url"') do (
-    set poisonUrl=%%i
+title SPECTR Installer // [######----] Downloading SPECTR
+for /f "tokens=*" %%i in ('powershell -Command "(Invoke-RestMethod -Uri 'https://api.github.com/repos/thatlonelydev/Spectr/releases/latest').assets | Where-Object { $_.name -eq 'Spectr.dll' } | Select-Object -ExpandProperty browser_download_url"') do (
+    set spectrUrl=%%i
 )
 
 
-if "%poisonUrl%"=="" (
+if "%spectrUrl%"=="" (
     color 0c
-    echo Failed to find Poison.Menu.dll in the latest release of Poison.
+    echo Failed to find Spectr.dll in the latest release of SPECTR.
     pause
     exit /b
 )
 
 
 color 0e
-curl -L "%poisonUrl%" -o "%gamePath%/BepInEx/plugins/Poison.Menu.dll"
+curl -L "%spectrUrl%" -o "%gamePath%/BepInEx/plugins/Spectr.dll"
 if errorlevel 1 (
     color 0c
-    echo Failed to download Poison.Menu.dll.
+    echo Failed to download Spectr.dll.
     echo Error code: %errorlevel%
     pause
     exit /b
@@ -107,8 +107,8 @@ if errorlevel 1 (
 
 
 cls
-title Poison Menu Installer // [##########] Finished
-echo Congratulations, you now have Poison installed!
+title SPECTR Installer // [##########] Finished
+echo Congratulations, you now have SPECTR installed!
 
 
 del "BPNX54234.zip" 2>nul
